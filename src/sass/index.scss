@@ -1,10 +1,19 @@
-@import './common';
-@import './example';
-@import './header';
-@import './footer';
-@import './main';
-@import './accessories';
-@import './order';
-@import './contact';
-@import './blog';
-@import './blog-article';
+@import './utils/common';
+@import './utils/reset';
+@import './utils/vars';
+@import './utils/hidden';
+@import './utils/mixins';
+
+@import './components/container';
+@import './components/section';
+
+
+// @import './example';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/main';
+@import './layout/accessories';
+@import './layout/order';
+@import './layout/contact';
+@import './layout/blog';
+@import './layout/blog-article';

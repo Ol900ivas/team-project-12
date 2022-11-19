@@ -1,0 +1,46 @@
+:root {
+  // Text and button borders colors
+  --main-text-color: #ffffff;
+  --second-text-color: #86e543;
+  --accent-text-color: #01383a;
+  --semi-light-text-color: #8d9289;
+
+  // Background colors
+  --main-background-color: #01383a;
+  --btn-accent-color: #86e543;
+  --footer-background-color: #001414;
+  --backdrop-color: rgba(0, 20, 20, 0.8);
+
+  // Shadows
+  --header-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2),
+    0px 4px 50px rgba(94, 236, 54, 0.5),
+    0px 4px 4px rgba(17, 168, 26, 0.2);
+  --btn-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+    0px 4px 10px rgba(255, 255, 255, 0.1);
+
+  // Underline
+  --underline-color: #28780D;
+  --underline-shadow: box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+  
+  // Fonts
+  --main-font: 'Roboto', sans-serif;
+  --call-font: 'Open Sans', sans-serif;
+
+// Transform
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 250ms;
+  
+}
+
+
+// --hero-background-color: #c4c4c4;
+// --icon-color: #afb1b8;
+// --footer-icon-color: rgba(255, 255, 255, 0.1);
+// --overlay-color: rgba(33, 150, 243, 0.9);
+// --modal-backdrop-color: rgba(0, 0, 0, 0.2);
+// --modal-btn-border-color: rgba(0, 0, 0, 0.1);
+// --work-item-text-bg: rgba(47, 48, 58, 0.8);
+// --input-border: rgba(33, 33, 33, 0.2);
+// --input-placeholder: rgba(117, 117, 117, 0.5);
+
+// --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));

@@ -1,0 +1,26 @@
+// .container {
+//     width: 100%;
+//     max-width: 480px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin: 0 auto;
+
+//     @include tablet {
+//         max-width: 768px;
+//     }
+
+//     @include desktop {
+//         max-width: 1200px;
+//     }
+// }
+
+// .header__container {
+//     @extend %align-list;
+// }
+
+// .footer__container {
+//     @include desktop {
+//         display: flex;
+//         align-items: baseline;
+//     }
+// }
