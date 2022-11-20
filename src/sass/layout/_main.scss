@@ -1,7 +1,9 @@
 .test {
-    background-color: blue;
     font-family: var(--test-text);
     font-size: 40px;
+    border-bottom: 1px solid var(--underline-color);
+    box-shadow: var(--underline-shadow);
+
 }
 
 // @include retina {
@@ -25,3 +27,4 @@
 //     }
 // }
 // }
+
