@@ -19,14 +19,17 @@
     0px 4px 10px rgba(255, 255, 255, 0.1);
 
   // Underline
-  --underline-color: #28780D;
-  --underline-shadow: box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+  --top-underline-color: #7BE34A;
+  --sub-underline-color: #28780D;
+  --top-underline-shadow: box-shadow:0px 4px 25px rgba(123, 227, 74, 0.25);
+  --sub-underline-shadow: box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
   
   // Fonts
-  --test-text: 'Roboto-Bold', sans-serif;
-  // --main-font: 'Roboto', sans-serif;
-  // --call-font: 'Open Sans', sans-serif;
-
+  // --test-text: 'roboto-400', sans-serif;
+  --main-font: 'roboto-400', sans-serif;
+  --medium-font: 'roboto-500', sans-serif;
+  --boid-font: 'roboto-700', sans-serif;
+  
 // Transform
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --duration: 250ms;
