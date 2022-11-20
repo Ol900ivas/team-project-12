@@ -1,33 +1,34 @@
-// .section {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-//     background-color: var(--light-background-color);
+.section {
+    padding-top: 40px;
+    padding-bottom: 48px;
+    
 
-//     &--background {
-//         background-color: var(--semi-light-background-color);
-//     }
+    @include desktop {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 
-//     @include desktop {
-//         padding-top: 94px;
-//         padding-bottom: 94px;
-//     }
+    &--padding-top {
+        padding-top: 0;
+    }
+&-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 35px;
 
-//     &--padding-top {
-//         padding-top: 0;
-//     }
+    text-align: center;
+    color: var(--second-text-color);
 
-//     &-title {
-//         margin-bottom: 30px;
-//         font-weight: 700;
-//         font-size: 28px;
-//         line-height: 1.18;
-//         text-align: center;
-//         color: var(--second-text-color);
+    @include tablet {
+        font-size: 56px;
+        line-height: 1.18;
+        margin-bottom: 51px;
+    }
+        @include desktop {
+           margin-bottom: 75px;
+        }
+}
+}
 
-//         @include desktop {
-//             margin-bottom: 50px;
-//             font-size: 36px;
-//             line-height: 1.17;
-//         }
-//     }
-// }
+    
