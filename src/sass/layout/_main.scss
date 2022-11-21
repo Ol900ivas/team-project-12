@@ -14,3 +14,25 @@
     background-image: url(../images/bg/hero-bg-desk-2x.jpg);
   }
 }
+
+// Underline
+
+.underline {
+  display: flex;
+  height: 8px;
+  width: 100%;
+}
+.underline-bottom {
+  height: 8px;
+  width: calc(100% / 5 * 2);
+  border-bottom: 1px solid var(--top-underline-color);
+  border-right: 1px solid var(--top-underline-color);
+  box-shadow: var(--top-underline-shadow);
+  // outline: 1px solid #ffffff;
+}
+.underline-top {
+  height: 8px;
+  width: calc(100% / 5 * 3);
+  border-top: 1px solid var(--top-underline-color);
+  box-shadow: var(--top-underline-shadow);
+}
