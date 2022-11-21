@@ -12,9 +12,9 @@
     padding-bottom: 40px;
   }
 
-  @include desktop {
-    justify-content: center;
-  }
+  // @include desktop {
+  //   justify-content: center;
+  // }
 }
 
 .logo {
@@ -86,9 +86,9 @@
 
 .address-list__link {
   font-weight: 400;
-font-size: 16px;
-line-height: 1.19;
-color: var(--semi-light-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--semi-light-text-color);
 }
 
 .address-list__item {
@@ -114,5 +114,16 @@ color: var(--semi-light-text-color);
   @include desktop {
     margin-bottom: 16px;
   }
-
 }
+
+.socials-list__link {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+
