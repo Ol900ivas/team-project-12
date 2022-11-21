@@ -1,6 +1,6 @@
 .footer {
   padding-top: 25px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 
   background: var(--footer-background-color);
 }
@@ -8,6 +8,8 @@
 .footer .container {
   @include tablet {
     display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   @include desktop {
@@ -22,7 +24,7 @@
   text-align: center;
 
   @include tablet {
-    margin-right: 61px;
+    margin-right: 60px;
   }
 
   @include desktop {
