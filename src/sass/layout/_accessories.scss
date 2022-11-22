@@ -44,13 +44,13 @@
         gap: 24px;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        @include tablet {
         width: 687px;
         height: 51px;
         gap: 53px;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include desktop {
         justify-content: center;
         margin-bottom: 72px;
         gap: 44px;
@@ -79,7 +79,7 @@
     }
 }
 
-.titel {
+.accessories-section-title {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -93,12 +93,12 @@
     display: block;
     gap: 16px;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include tablet {
         display: flex;
         gap: 24px;
     }
 
-    @media screen and (min-width:  1200px) {
+        @include desktop {
         display: flex;
         gap: 24px;
     }
@@ -107,32 +107,32 @@
 .list-cards__block {
     gap: 16px;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @include tablet {
         display: flex;
         flex-wrap: wrap;
         gap: 38px;
     }
 
-    @media screen and (min-width: 1200px) {
+        @include desktop {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
     }
 }
 
-/*.list-cards__item {
-    display: block;
+// .list-cards__item {
+//     display: block;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        width: 285px;
-        flex-basis: calc((100% - 38px) / 2);
-    }
+//     @include tablet {
+//         width: 285px;
+//         flex-basis: calc((100% - 38px) / 2);
+//     }
 
-    @media screen and (min-width: 1200px) {
-        width: 285px;
-        flex-basis: calc((100% - 20px) / 5);
-    }
-}*/
+//         @include desktop {
+//         width: 285px;
+//         flex-basis: calc((100% - 20px) / 5);
+//     }
+// }
 
 .list-cards__link {
     display: block;

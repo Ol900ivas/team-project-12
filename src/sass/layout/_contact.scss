@@ -5,14 +5,15 @@
   padding-bottom: 48px;
   background: var(--main-background-color);
   background-image: url(../images/bg/bg-mob.jpg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    flex-grow: 1;
   @include retina {
     background-image: url(../images/bg/bg-mob-2x.jpg);
   }
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0 auto;
-  flex-grow: 1;
+    
   @include tablet {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -280,7 +281,7 @@
   padding: 16px 66px;
   min-width: 173px;
   height: 51px;
-
+  
   font-family: inherit;
   font-weight: var(--bold-font);
   font-size: 16px;
