@@ -5,38 +5,41 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 body {
-    font-family: var(--main-font);
-    color: var(--main-text-color);
-    background-color: var(--main-background-color);
-     
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
 }
 
 .link {
-    text-decoration: none;
-    font-style: normal;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
 }
 
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
