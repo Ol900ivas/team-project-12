@@ -26,14 +26,33 @@
 .header-button {
   width: 95px;
   height: 40px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
   background: #86e543;
   border-radius: 16px;
   border: none;
   cursor: pointer;
 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+
   @include desktop {
+    width: 102px;
+    height: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin-left: auto;
+
+    line-height: 1;
   }
 }
 
