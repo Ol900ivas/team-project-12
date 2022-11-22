@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0;
   margin: 0 auto;
-  background-image: url('../images/blog/bg.jpg');
+  background-image: url('../images/blog/bg-tabl.jpg');
 
   @include mobile {
     width: 480px;
@@ -19,16 +19,16 @@
 
 .article-list-mobile {
   @include tablet {
-    display: none;
+    color: var(--second-text-color);
   }
 
   @include desktop {
-    display: none;
+    color: var(--second-text-color);
   }
 }
 
 .article-page-title {
-  padding-top: 144px;
+  margin-top: 40px;
   padding-left: 16px;
   margin-bottom: 31px;
   font-family: 'Roboto';
@@ -37,11 +37,29 @@
   font-size: 24px;
   line-height: 1.16;
   color: var(--main-text-color);
+  @include tablet {
+    margin-top: 120px;
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 72px;
+  }
+}
+
+.article-block {
+  @include tablet {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .article-image {
   margin-bottom: 20px;
   width: 100%;
+  @include tablet {
+    width: 387px;
+    border-radius: 12px;
+    margin-left: 40px;
+  }
 }
 
 .article-author {
@@ -52,6 +70,14 @@
   font-weight: 500;
   font-size: 16px;
   color: var(--main-text-color);
+  @include tablet {
+    color: var(--second-text-color);
+    font-size: 24px;
+    line-height: 100%;
+    margin-left: 40px;
+    margin-bottom: 32px;
+    width: 134px;
+  }
 }
 
 .article-date {
@@ -62,6 +88,13 @@
   font-weight: 500;
   font-size: 16px;
   color: var(--semi-light-text-color);
+  @include tablet {
+    margin-left: 40px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 100%;
+    width: 261px;
+  }
 }
 
 .article-content {
@@ -69,11 +102,21 @@
   padding-right: 16px;
   padding-bottom: 48px;
   color: var(--main-text-color);
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.16;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 120px;
+  }
 }
 
 .article-list-mobile__list {
   padding: 0 20px;
   margin: 0;
+  @include tablet {
+    padding: 0 40px;
+  }
 }
 
 .article-list-mobile__title {
