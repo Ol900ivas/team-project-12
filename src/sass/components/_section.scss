@@ -1,17 +1,16 @@
 .section {
-    padding-top: 40px;
-    padding-bottom: 48px;
-    
+  padding-top: 40px;
+  padding-bottom: 48px;
 
-    @include desktop {
-        padding-top: 120px;
-        padding-bottom: 120px;
-    }
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
-    &--padding-top {
-        padding-top: 0;
-    }
-&-title {
+  &--padding-top {
+    padding-top: 0;
+  }
+  &-title {
     font-weight: 600;
     font-size: 24px;
     line-height: 1.17;
@@ -21,14 +20,12 @@
     color: var(--second-text-color);
 
     @include tablet {
-        font-size: 56px;
-        line-height: 1.18;
-        margin-bottom: 51px;
+      font-size: 56px;
+      line-height: 1.18;
+      margin-bottom: 51px;
     }
-        @include desktop {
-           margin-bottom: 75px;
-        }
+    @include desktop {
+      margin-bottom: 75px;
+    }
+  }
 }
-}
-
-    
