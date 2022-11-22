@@ -34,6 +34,11 @@
 }
 */
 
+.container-filters {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .list-button {
     display: flex;
     margin-bottom: 72px;
@@ -52,7 +57,10 @@
 
     @media screen and (min-width: 1200px) {
         justify-content: center;
-        margin-bottom: 72px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 270px;
+        margin-top: 120px;
         gap: 44px;
     }
 }
@@ -79,7 +87,16 @@
     }
 }
 
+<<<<<<< Updated upstream
 .titel {
+=======
+/*.lines {
+    position: relative;
+    width: 100%;
+}*/
+
+.accessories-section-title {
+>>>>>>> Stashed changes
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -88,6 +105,108 @@
     margin-right: 16px;
     margin-bottom: 4px;
 }
+
+/*.line-top,
+.line-bottom {
+    position: absolute;
+    display: block;
+    height: 1px;
+    background-color: #28780D;
+}
+
+.line-top {
+    background-color: #7BE34A;
+    box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+}
+
+.line-top-1 {
+    width: 50vw;
+    top: 43px;
+    left: calc((100% - 100vw) / 2);
+
+    @include tablet {
+        top: 86px;
+    }
+
+    @include desktop {
+        width: 40vw;
+    }
+}
+
+.line-top-2 {
+    width: 1px;
+    top: 33px;
+    left: calc(50vw + ((100% - 100vw) / 2));
+
+    @include tablet {
+        top: 76px;
+    }
+
+    @include desktop {
+        left: calc(40vw + ((100% - 100vw) / 2));
+    }
+}
+
+.line-top-3 {
+    width: 50vw;
+    height: 1px;
+    top: 33px;
+    left: calc(50vw + ((100% - 100wv) / 2));
+
+    @include tablet {
+        top: 75px;
+    }
+
+    @include desktop {
+        width: 60vw;
+        left: calc(40vw + ((100% - 100vw) / 2));
+    }
+}
+
+.line-bottom-1 {
+    width: calc(50vw + 8px);
+    top: 51px;
+    left: calc((100% - 100vw) / 2);
+
+    @include tablet {
+        top: 94px;
+    }
+
+    @include desktop {
+        width: calc(40vw + 8px);
+    }
+}
+
+.line-bottom-2 {
+    width: 1px;
+    height: 11px;
+    top: 41px;
+    left: calc(50vw + ((100% - 100vw) / 2) + 8px);
+
+    @include tablet {
+        top: 84px;
+    }
+
+    @include desktop {
+        left: calc(40vw + ((100% - 100vw) / 2) + 8px);
+    }
+}
+
+.line-bottom-3 {
+    width: 50vw;
+    height: 1px;
+    top: 41px;
+    left: calc(50vw + ((100% - 100vw) / 2) + 8px);
+
+    @include tablet {
+        top: 83px;
+    }
+
+    @include desktop {
+        width: 60vw;
+        left: calc(40vw + ((100% - 100vw) / 2) + 8px);
+    }
+}*/
 
 .list-cards {
     display: block;
@@ -134,6 +253,7 @@
     }
 }*/
 
+
 .list-cards__link {
     display: block;
     text-decoration: none;
@@ -152,7 +272,9 @@
 }
 
 .list-cards__img {
-    max-width: 100%;
+    /*max-width: 100%;*/
+    width: 384px;
+    height: 285px;
 }
 
 .overlay {
