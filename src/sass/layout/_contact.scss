@@ -1,4 +1,366 @@
-.test {
+// ---SECTION "CONTACT"---
+
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 48px;
+  background: var(--main-background-color);
+  background-image: url(../images/bg/bg-mob.jpg);
+  @include retina {
+    background-image: url(../images/bg/bg-mob-2x.jpg);
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  flex-grow: 1;
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(../images/bg/bg-tab.jpg);
+    @include retina {
+      background-image: url(../images/bg/bg-tab-2x.jpg);
+    }
+  }
+  @include desktop {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-image: url(../images/bg/bg3-desk.jpg);
+    @include retina {
+      background-image: url(../images/bg/bg3-desk-2x.jpg);
+    }
+  }
+}
+
+// ---CONTAINERS---
+
+.main__container {
+  @include desktop {
+    margin-top: 59px;
+    display: flex;
+    align-items: baseline;
+    gap: 122px;
+  }
+}
+
+.contacts__container {
   display: flex;
-  color: blue;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  gap: 24px;
+  padding: 0;
+  @include tablet {
+    margin-top: 32px;
+    margin-bottom: 40px;
+    gap: 32px;
+  }
+  @include desktop {
+    margin: 0;
+    gap: 40px;
+  }
+}
+
+.form__container {
+  padding: 0;
+  @include tablet {
+    padding-left: 89px;
+    padding-right: 88px;
+  }
+  @include desktop {
+    padding: 0;
+  }
+}
+
+// ---ZIG-ZAG LINES---
+.lines {
+  position: relative;
+  width: 100%;
+}
+.line-top,
+.line-bottom {
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: var(--sub-underline-color);
+}
+.line-top {
+  background-color: var(--top-underline-color);
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+}
+.line-top-1 {
+  width: 40vw;
+  top: 40px;
+  left: calc((100% - 100vw) / 2);
+  @include tablet {
+    width: 55vw;
+    top: 84px;
+  }
+  @include desktop {
+    width: 32vw;
+  }
+}
+.line-top-2 {
+  width: 1px;
+  height: 11px;
+  top: 30px;
+  left: calc(40vw + ((100% - 100vw) / 2));
+  @include tablet {
+    top: 74px;
+    left: calc(55vw + ((100% - 100vw) / 2));
+  }
+  @include desktop {
+    left: calc(32vw + ((100% - 100vw) / 2));
+  }
+}
+.line-top-3 {
+  width: 60vw;
+  height: 1px;
+  top: 30px;
+  left: calc(40vw + ((100% - 100vw) / 2));
+  @include tablet {
+    top: 74px;
+    left: calc(55vw + ((100% - 100vw) / 2));
+  }
+  @include desktop {
+    width: 70vw;
+    left: calc(32vw + ((100% - 100vw) / 2));
+  }
+}
+.line-bottom-1 {
+  width: calc(40vw + 4px);
+  top: 44px;
+  left: calc((100% - 100vw) / 2);
+  @include tablet {
+    top: 90px;
+    width: calc(55vw + 4px);
+  }
+  @include desktop {
+    width: calc(32vw + 4px);
+  }
+}
+.line-bottom-2 {
+  width: 1px;
+  height: 10px;
+  top: 35px;
+  left: calc(40vw + ((100% - 100vw) / 2) + 4px);
+  @include tablet {
+    top: 81px;
+    left: calc(55vw + ((100% - 100vw) / 2) + 4px);
+  }
+  @include desktop {
+    left: calc(32vw + ((100% - 100vw) / 2) + 4px);
+  }
+}
+.line-bottom-3 {
+  width: 60vw;
+  height: 1px;
+  top: 34px;
+  left: calc(40vw + ((100% - 100vw) / 2) + 4px);
+  @include tablet {
+    top: 80px;
+    left: calc(55vw + ((100% - 100vw) / 2) + 4px);
+  }
+  @include desktop {
+    width: 70vw;
+    left: calc(32vw + ((100% - 100vw) / 2) + 4px);
+  }
+}
+
+// ---NON-CONTENT PICTURE---
+
+.title__item::after {
+  content: '';
+  display: flex;
+  width: 100%;
+  height: 346px;
+  @extend %bg-attribute;
+  background-color: transparent;
+  background-image: url(../images/contacts/gamer_table_mob_1x.jpg);
+
+  @include retina {
+    background-image: url(../images/contacts/gamer_table_mob_2x.jpg);
+  }
+
+  @include tablet {
+    background-image: url(../images/contacts/gamer_table_tab_1x.jpg);
+    @include retina {
+      background-image: url(../images/contacts/gamer_table_tab_2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: url(../images/contacts/gamer_table_desk_1x.jpg);
+    @include retina {
+      background-image: url(../images/contacts/gamer_table_desk_2x.jpg);
+    }
+  }
+}
+// ---TITLES/TEXT---
+
+.contacts__title {
+  text-align: left;
+  color: var(--main-text-color);
+  @include tablet {
+    margin-bottom: 67px;
+    margin-left: 59px; // ---Temporally---
+  }
+  @include desktop {
+    margin-bottom: 75px;
+    margin-left: 102px; // ---Temporally---
+    font-size: 56px;
+    line-height: 1.18;
+  }
+  &.green-title {
+    margin-left: 0;
+    margin-bottom: 16px;
+    color: var(--second-text-color);
+    text-transform: uppercase;
+    @include tablet {
+      margin-left: 0;
+      margin-bottom: 48px;
+      font-size: 36px;
+    }
+  }
+}
+
+.contacts__text {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-text-color);
+  @include tablet {
+    max-width: 488px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.contacts-mail,
+.contacts-tel {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--semi-light-text-color);
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.online-input {
+  width: 100%;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #86e543;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main-text-color);
+    margin-bottom: 4px;
+    @include tablet {
+      font-size: 18px;
+      line-height: 1.11;
+    }
+  }
+}
+
+.contacts-label {
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #cdcdcd;
+  @include tablet {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+// ---BUTTON---
+
+.submit-button {
+  padding: 16px 66px;
+  min-width: 173px;
+  height: 51px;
+
+  font-family: inherit;
+  font-weight: var(--bold-font);
+  font-size: 16px;
+  line-height: 1.19;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  background: transparent;
+
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  transition: cursor var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+  @include tablet {
+    padding: 16px 112px;
+    min-width: 306px;
+    height: 70px;
+    font-size: 32px;
+  }
+  &.green {
+    padding: 16px 75px;
+    color: var(--accent-text-color);
+    background: var(--btn-accent-color);
+    @include tablet {
+      padding: 16px 131px;
+      min-width: 306px;
+      height: 70px;
+      font-size: 32px;
+    }
+  }
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include tablet {
+    gap: 32px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  @include desktop {
+    gap: 40px;
+  }
+}
+
+// ----////-----
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contacts-comment {
+  width: 100%;
+  height: 95px;
+  background-color: transparent;
+  border: 1px solid #86e543;
+  border-radius: 0px;
+  @include tablet {
+    height: 120px;
+  }
+}
+
+// <!-- Form container "Contact Us" -->
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 34px;
+  }
+  @include desktop {
+    margin-bottom: 47px;
+  }
 }

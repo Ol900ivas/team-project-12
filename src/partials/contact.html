@@ -1,3 +1,112 @@
-<section>
-  <div class="test">hkfjhsjhfhfhsehf</div>
+<section class="contacts">
+  <div class="lines">
+    <div class="container title__container">
+      <ul class="title__list">
+        <li class="title__item">
+          <h2 class="contacts__title section-title">Сontacts</h2>
+        </li>
+      </ul>
+    </div>
+    <div class="line-top line-top-1"></div>
+    <div class="line-top line-top-2"></div>
+    <div class="line-top line-top-3"></div>
+    <div class="line-bottom line-bottom-1"></div>
+    <div class="line-bottom line-bottom-2"></div>
+    <div class="line-bottom line-bottom-3"></div>
+  </div>
+
+  <div class="container main__container">
+    <div class="container contacts__container">
+      <p class="contacts__text">
+        In case of queries about order handling and/ or delay, drop us an email
+        at
+      </p>
+      <p class="contacts__text">info@shopforgamers.com</p>
+      <div class="contacts-info">
+        <div class="contacts-email">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__text">Email</p>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts-mail link" href="mailto:sfg.info@gmail.com"
+                >sfg.info@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="contacts-phone">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__text">Phone number</p>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts-tel link" href="tel:+380936432288"
+                >+38 (093) 643 22 88</a
+              >
+            </li>
+            <li class="contacts__item">
+              <a class="contacts-tel link" href="tel:+380503454423"
+                >+38 (050) 345 44 23</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form container "Contact Us" -->
+    <div class="container form__container">
+      <h2 class="contacts__title green-title">Contact Us</h2>
+      <form class="online-form">
+        <div class="contacts__form">
+          <input
+            type="text"
+            class="online-input"
+            name="online-name"
+            placeholder="Name"
+          />
+          <input
+            type="mail"
+            class="online-input"
+            name="online-mail"
+            placeholder="Email"
+          />
+          <div class="contacts__form-comment">
+            <label for="online-comment" class="contacts-label"
+              >Leave your message</label
+            >
+            <textarea
+              name="online-comment"
+              id="online-comment"
+              class="contacts-comment"
+            ></textarea>
+          </div>
+        </div>
+        <button type="button" data-modal-open class="submit-button">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
 </section>
+
+<!-- ATTENTION! This code for the modal window below should be added somewhere next to the Footer part -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-button" data-modal-close>
+      <svg class="modal-close-icon" width="31" height="31">
+        <use href="./images/icons.svg#icon-close-g"></use>
+      </svg>
+    </button>
+    <p class="modal-title">
+      Thank you<br />
+      for your message!<br />
+      We will contact you soon!
+    </p>
+    <form action="https://www.google.com.ua/">
+      <button type="submit" class="submit-button green">Ok</button>
+    </form>
+  </div>
+</div>
