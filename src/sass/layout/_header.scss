@@ -186,3 +186,7 @@
   line-height: 1.17px;
   text-transform: uppercase;
 }
+
+.header-container .menu-list__item:not(:last-child) {
+  margin-bottom: 0;
+}
