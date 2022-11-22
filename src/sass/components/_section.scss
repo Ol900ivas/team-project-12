@@ -3,6 +3,12 @@
     padding-bottom: 48px;
     
 
+    // @include tablet {
+    //     padding-top: 120px;
+    //     padding-bottom: 120px;
+    // }
+
+
     @include desktop {
         padding-top: 120px;
         padding-bottom: 120px;
