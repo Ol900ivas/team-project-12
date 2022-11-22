@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background: var(--main-background-color);
   box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2),
     0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
@@ -26,14 +27,33 @@
 .header-button {
   width: 95px;
   height: 40px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
   background: #86e543;
   border-radius: 16px;
   border: none;
   cursor: pointer;
 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+
   @include desktop {
+    width: 102px;
+    height: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     margin-left: auto;
+
+    line-height: 1;
   }
 }
 
@@ -80,28 +100,73 @@
   }
 }
 
+.mob-menu-close-btn .icon-cross {
+  display: none;
+}
+
+.mob-menu-close-btn.is-open .icon-cross {
+  display: block;
+}
+
+.mob-menu-close-btn.is-open .icon-burger {
+  display: none;
+}
+
 .mob-menu {
-  position: fixed;
+  display: none;
+  position: absolute;
   z-index: 1;
-  top: 0;
-  background-color: var(--white-color);
+  top: 100%;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  > .container {
-    display: flex;
-    padding-top: 64px;
-    padding-bottom: 236px;
+  padding-top: 64px;
+  padding-bottom: 236px;
+  background-image: url(/src/images/bg/menu-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
 
-    background-image: url(/src/images/bg/menu-bg-mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  &.is-open {
+    display: block;
+  }
+  @include retina {
+    background-image: url(/src/images/bg/menu-bg-mob-2x.jpg);
+  }
 
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 574px;
+    background-image: url(/src/images/bg/menu-bg-tab.jpg);
     @include retina {
-      background-image: url(/src/images/bg/menu-bg-mob-2x.jpg);
+      background-image: url(/src/images/bg/menu-bg-tab-2x.jpg);
     }
   }
 }
+
+// .mob-menu {
+//   position: fixed;
+//   z-index: 1;
+//   top: 0;
+//   background-color: var(--white-color);
+//   width: 100vw;
+//   height: 100vh;
+//   > .container {
+//     display: flex;
+//     padding-top: 64px;
+//     padding-bottom: 236px;
+
+//     background-image: url(/src/images/bg/menu-bg-mob.jpg);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+
+//     @include retina {
+//       background-image: url(/src/images/bg/menu-bg-mob-2x.jpg);
+//     }
+//   }
+// }
 
 .mob-menu .menu-list {
   display: flex;
