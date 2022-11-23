@@ -19,7 +19,7 @@
   }
 
   @include desktop {
-    background-image: url('../images/order/bgr.jpg');
+    background-image: url('../images/bg/bg1-desk.jpg');
     @include retina {
       background-image: url('../images/order/bgr-2x.jpg');
     }
