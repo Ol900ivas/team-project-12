@@ -45,7 +45,6 @@
 
 // --NAVIGATION TOP---
 .list-button {
-
   display: flex;
   margin-bottom: 32px;
   gap: 24px;
@@ -83,7 +82,6 @@
     background-color: #86e543;
     box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
   }
-
 }
 
 .accessories-section-title {
@@ -193,33 +191,29 @@
 }
 
 .list-cards {
-    display: block;
-    gap: 16px;
-    
-    @include tablet {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px;
-       
-    }
-    @include desktop {
-        gap: 24px;
-    }
-&__item {
+  display: block;
+  gap: 16px;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  @include desktop {
+    gap: 24px;
+  }
+  &__item {
     width: 100%;
 
     @include tablet {
-        width: calc((100% - 1 * 24px) / 2);
+      width: calc((100% - 1 * 24px) / 2);
     }
 
     @include desktop {
-        width: calc((100% - 3 * 24px) / 4);
+      width: calc((100% - 3 * 24px) / 4);
     }
-
+  }
 }
-
-}
-
 
 .list-cards__block {
   gap: 16px;
@@ -277,23 +271,31 @@
   top: 0;
   left: 0;
   overflow: auto;
-  transform: translateY(101%);
+  transform: translateY(100%);
   transition: transform var(--timing-function);
   width: 100%;
   height: 100%;
-  padding: 16px 16px 52px 16px;
+  padding: 16px 16px;
   background-color: #01383a;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+    border: 1px solid #86e543;
+    border-radius: 12px;
+  }
 }
 
 .overlay-text {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 20px;
-  min-width: 253px;
+  max-width: 253px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
 }
 
 .list-cards__link:hover .overlay,
@@ -318,20 +320,18 @@
 }
 
 .list-cards__text1 {
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    text-decoration-line: line-through;
-    color: #8D9289;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+  color: #8d9289;
 }
 
 .list-cards__text2 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 100%;
-    color: #86E543;
-    justify-content: baseline;
-    gap: 80px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #86e543;
+  justify-content: baseline;
+  gap: 80px;
 }
-
