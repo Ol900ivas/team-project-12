@@ -88,7 +88,7 @@
   background-color: var(--top-underline-color);
   box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
 }
-.line-top-1 {
+.line-1-top {
   width: 40vw;
   top: 40px;
   left: calc((100% - 100vw) / 2);
@@ -100,7 +100,7 @@
     width: 32vw;
   }
 }
-.line-top-2 {
+.line-2-top {
   width: 1px;
   height: 11px;
   top: 30px;
@@ -113,7 +113,7 @@
     left: calc(32vw + ((100% - 100vw) / 2));
   }
 }
-.line-top-3 {
+.line-3-top {
   width: 60vw;
   height: 1px;
   top: 30px;
@@ -127,7 +127,7 @@
     left: calc(32vw + ((100% - 100vw) / 2));
   }
 }
-.line-bottom-1 {
+.line-1-bottom {
   width: calc(40vw + 4px);
   top: 44px;
   left: calc((100% - 100vw) / 2);
@@ -139,7 +139,7 @@
     width: calc(32vw + 4px);
   }
 }
-.line-bottom-2 {
+.line-2-bottom {
   width: 1px;
   height: 10px;
   top: 35px;
@@ -152,7 +152,7 @@
     left: calc(32vw + ((100% - 100vw) / 2) + 4px);
   }
 }
-.line-bottom-3 {
+.line-3-bottom {
   width: 60vw;
   height: 1px;
   top: 34px;
@@ -176,6 +176,7 @@
   height: 346px;
   @extend %bg-attribute;
   background-color: transparent;
+  border-radius: 14px;
   background-image: url(../images/contacts/gamer_table_mob_1x.jpg);
 
   @include retina {

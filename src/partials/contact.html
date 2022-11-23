@@ -7,12 +7,12 @@
         </li>
       </ul>
     </div>
-    <div class="line-top line-top-1"></div>
-    <div class="line-top line-top-2"></div>
-    <div class="line-top line-top-3"></div>
-    <div class="line-bottom line-bottom-1"></div>
-    <div class="line-bottom line-bottom-2"></div>
-    <div class="line-bottom line-bottom-3"></div>
+    <div class="line-top line-1-top"></div>
+    <div class="line-top line-2-top"></div>
+    <div class="line-top line-3-top"></div>
+    <div class="line-bottom line-1-bottom"></div>
+    <div class="line-bottom line-2-bottom"></div>
+    <div class="line-bottom line-3-bottom"></div>
   </div>
 
   <div class="container main__container">
@@ -60,37 +60,42 @@
       <h2 class="contacts__title green-title">Contact Us</h2>
       <form class="online-form">
         <div class="contacts__form">
-          <input
-            type="text"
-            class="online-input"
-            name="online-name"
-            required
-            minlength="3"
-            id="online-name"
-            placeholder="Name"
-          />
-          <input
-            type="email"
-            class="online-input"
-            name="online-mail"
-            required
-            id="online-mail"
-            placeholder="Email"
-          />
+          <div class="modal-field">
+            <label for="online-name" class="modal-label"></label>
+            <input
+              type="text"
+              class="online-input"
+              name="online-name"
+              required
+              minlength="3"
+              id="online-name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="online-mail" class="modal-label"></label>
+            <input
+              type="email"
+              class="online-input"
+              name="online-mail"
+              required
+              id="online-mail"
+              placeholder="Email"
+            />
+          </div>
           <div class="contacts__form-comment">
             <label for="online-comment" class="contacts-label"
               >Leave your message</label
             >
             <textarea
               name="online-comment"
+              required
               id="online-comment"
               class="contacts-comment"
             ></textarea>
           </div>
         </div>
-        <button type="submit" data-modal-open class="submit-button">
-          Send
-        </button>
+        <button type="submit" class="submit-button">Send</button>
       </form>
     </div>
   </div>
