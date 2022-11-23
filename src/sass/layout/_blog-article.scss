@@ -31,13 +31,11 @@
   margin-top: 40px;
   padding-left: 16px;
   margin-bottom: 31px;
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: var(--medium-font);
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
-  color: var(--main-text-color);
-  @include tablet {
+    @include tablet {
     margin-top: 120px;
     font-size: 56px;
     line-height: 1;
@@ -65,12 +63,9 @@
 .article-author {
   padding-left: 16px;
   margin-bottom: 8px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--medium-font);
   font-size: 16px;
-  color: var(--main-text-color);
-  @include tablet {
+    @include tablet {
     color: var(--second-text-color);
     font-size: 24px;
     line-height: 100%;
@@ -83,9 +78,7 @@
 .article-date {
   padding-left: 16px;
   margin-bottom: 8px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
+  font-family: var(--medium-font);
   font-size: 16px;
   color: var(--semi-light-text-color);
   @include tablet {
