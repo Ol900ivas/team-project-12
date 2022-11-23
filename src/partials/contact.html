@@ -64,15 +64,18 @@
             type="text"
             class="online-input"
             name="online-name"
-            placeholder="Name"
             required
+            minlength="3"
+            id="online-name"
+            placeholder="Name"
           />
           <input
-            type="mail"
+            type="email"
             class="online-input"
             name="online-mail"
-            placeholder="Email"
             required
+            id="online-mail"
+            placeholder="Email"
           />
           <div class="contacts__form-comment">
             <label for="online-comment" class="contacts-label"
@@ -82,11 +85,10 @@
               name="online-comment"
               id="online-comment"
               class="contacts-comment"
-              required
             ></textarea>
           </div>
         </div>
-        <button type="button" data-modal-open class="submit-button">
+        <button type="submit" data-modal-open class="submit-button">
           Send
         </button>
       </form>
