@@ -6,14 +6,14 @@
   background: var(--main-background-color);
   background-image: url(../images/bg/bg-mob.jpg);
   background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    flex-grow: 1;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  flex-grow: 1;
   @include retina {
     background-image: url(../images/bg/bg-mob-2x.jpg);
   }
-    
+
   @include tablet {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -246,12 +246,14 @@
   }
 }
 
-.online-input {
+.online-input:required {
   width: 100%;
   height: 24px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #86e543;
+  color: var(--main-text-color);
+  outline: rgba(0, 0, 0, 0);
   &::placeholder {
     font-size: 16px;
     line-height: 1.25;
@@ -281,7 +283,7 @@
   padding: 16px 66px;
   min-width: 173px;
   height: 51px;
-  
+
   font-family: inherit;
   font-weight: var(--bold-font);
   font-size: 16px;
@@ -294,10 +296,13 @@
   display: block;
   border: 1px solid #ffffff;
   border-radius: 16px;
-  transition: cursor var(--duration) var(--timing-function);
+  transition: cursor var(--duration) var(--timing-function),
+    filter var(--duration) var(--timing-function);
   &:hover,
   &:focus {
     cursor: pointer;
+    filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
+      drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
   }
   @include tablet {
     padding: 16px 112px;
@@ -309,6 +314,11 @@
     padding: 16px 75px;
     color: var(--accent-text-color);
     background: var(--btn-accent-color);
+    border: none;
+    &:hover,
+    &:focus {
+      box-shadow: var(--btn-shadow);
+    }
     @include tablet {
       padding: 16px 131px;
       min-width: 306px;
@@ -346,6 +356,8 @@
   background-color: transparent;
   border: 1px solid #86e543;
   border-radius: 0px;
+  color: var(--main-text-color);
+  outline: rgba(0, 0, 0, 0);
   @include tablet {
     height: 120px;
   }
