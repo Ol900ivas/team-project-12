@@ -1,9 +1,9 @@
 .section_one {
   padding-top: 40px;
   padding-bottom: 48px;
-  background-image: url('../images/order/bgr-mob.jpg');
+  background-image: url('../images/bg/bg-mob.jpg');
   @include retina {
-    background-image: url('../images/order/bgr-mob-2x.jpg');
+    background-image: url('../images/bg/bg-mob-2x.jpg');
   }
   background-repeat: no-repeat;
   background-position: top center;
@@ -12,16 +12,16 @@
   @include tablet {
     padding-top: 120px;
     padding-bottom: 118px;
-    background-image: url('../images/order/bgr-tab.jpg');
+    background-image: url('../images/bg/bg-tab.jpg');
     @include retina {
-      background-image: url('../images/order/bgr-tab-2x.jpg');
+      background-image: url('../images/bg/bg-tab-2x.jpg');
     }
   }
 
   @include desktop {
     background-image: url('../images/bg/bg1-desk.jpg');
     @include retina {
-      background-image: url('../images/order/bgr-2x.jpg');
+      background-image: url('../images/bg/bg1-desk-2x.jpg');
     }
   }
 }
