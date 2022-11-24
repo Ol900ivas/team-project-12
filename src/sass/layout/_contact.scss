@@ -35,6 +35,9 @@
 // ---CONTAINERS---
 
 .main__container {
+  @include tablet {
+    padding: 0;
+  }
   @include desktop {
     margin-top: 59px;
     display: flex;
@@ -53,10 +56,13 @@
   @include tablet {
     margin-top: 32px;
     margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     gap: 32px;
   }
   @include desktop {
     margin: 0;
+    padding-right: 0;
     gap: 40px;
   }
 }
@@ -64,7 +70,7 @@
 .form__container {
   padding: 0;
   @include tablet {
-    padding-left: 89px;
+    padding-left: 88px;
     padding-right: 88px;
   }
   @include desktop {
@@ -311,6 +317,9 @@
     height: 70px;
     font-size: 32px;
   }
+  @include desktop {
+    margin-left: 0;
+  }
   &.green {
     padding: 16px 75px;
     color: var(--accent-text-color);
@@ -339,6 +348,7 @@
     align-items: baseline;
   }
   @include desktop {
+    flex-direction: column;
     gap: 40px;
   }
 }
