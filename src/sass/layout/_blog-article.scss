@@ -2,7 +2,15 @@
   width: 100%;
   padding: 0;
   margin: 0 auto;
-  background-image: url('../images/blog/bg-tabl.jpg');
+  background-image: url(../images/bg/bg-mob.jpg);
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    @include retina {
+      background-image: url(../images/bg/bg-mob-2x.jpg);
+    }
 
   @include mobile {
     width: 480px;
@@ -10,10 +18,28 @@
 
   @include tablet {
     width: 768px;
-  }
-
+    background-image: url(../images/bg/bg-tab.jpg);
+    
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    
+      @include retina {
+        background-image: url(../images/bg/bg-tab-2x.jpg);
+      }
+    }
+  
   @include desktop {
-    width: 1200px;
+    width: 1280px;
+    background-image: url(../images/bg/bg3-desk.jpg);
+    
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    
+      @include retina {
+        background-image: url(../images/bg/bg3-desk-2x.jpg);
+      }
   }
 }
 
