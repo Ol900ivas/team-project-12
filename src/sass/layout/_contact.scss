@@ -205,6 +205,7 @@
 // ---TITLES/TEXT---
 
 .contacts__title {
+  font-weight: 500;
   text-align: left;
   color: var(--main-text-color);
   @include tablet {
@@ -317,9 +318,7 @@
     height: 70px;
     font-size: 32px;
   }
-  @include desktop {
-    margin-left: 0;
-  }
+  
   &.green {
     padding: 16px 75px;
     color: var(--accent-text-color);

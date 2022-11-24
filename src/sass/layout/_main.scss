@@ -221,9 +221,7 @@
   position: absolute;
   left: 24px;
   bottom: 37px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   text-align: left;
@@ -237,37 +235,32 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+  
 }
 
 .banner__title {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    position: absolute;
+  position: absolute;
     left: 24px;
     bottom: 37px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 1.18;
+    font-family: var(--medium-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
     text-align: left;
-    margin-left: 41px;
-    margin-top: 352px;
-    background-image: linear-gradient(
-      270deg,
-      #1edde0 13.26%,
-      #8bda41 51.01%,
-      #ef001b 107.89%
-    );
+    margin: 0;
+    background-image: linear-gradient(270deg,
+        #1edde0 13.26%,
+        #8bda41 51.01%,
+        #ef001b 107.89%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 1.18;
+    margin-left: 41px;
+    margin-top: 352px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 56px;
@@ -277,7 +270,7 @@
   }
 }
 
-.knop {
+.marker {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,7 +278,7 @@
   margin-top: 24px;
 }
 
-.knop__rad {
+.marker__rad {
   border-radius: 50%;
   cursor: pointer;
   height: 16px;
@@ -294,7 +287,7 @@
   color: var(--main-text-color);
 }
 
-.knop__rad::after {
+.marker__rad::after {
   position: absolute;
   background-color: var(--main-text-color);
   content: '';
@@ -304,8 +297,8 @@
   border-radius: 50%;
 }
 
-.knop__rad:hover::after,
-.knop__rad:focus::after {
+.marker__rad:hover::after,
+.marker__rad:focus::after {
   width: 40px;
   border-radius: 30px;
   transform: translateX(-12px);
