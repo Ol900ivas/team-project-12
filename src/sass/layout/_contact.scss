@@ -33,6 +33,13 @@
 }
 
 // ---CONTAINERS---
+.picture__container {
+  padding: 0;
+  @include tablet {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 
 .main__container {
   @include tablet {
@@ -173,33 +180,14 @@
   }
 }
 
-// ---NON-CONTENT PICTURE---
-
-.title__item::after {
-  content: '';
-  display: flex;
+.contacts__picture,
+.contacts__photo {
+  display: block;
   width: 100%;
-  height: 346px;
   @extend %bg-attribute;
   background-color: transparent;
-  border-radius: 14px;
-  background-image: url(../images/contacts/gamer_table_mob_1x.jpg);
-
-  @include retina {
-    background-image: url(../images/contacts/gamer_table_mob_2x.jpg);
-  }
-
   @include tablet {
-    background-image: url(../images/contacts/gamer_table_tab_1x.jpg);
-    @include retina {
-      background-image: url(../images/contacts/gamer_table_tab_2x.jpg);
-    }
-  }
-  @include desktop {
-    background-image: url(../images/contacts/gamer_table_desk_1x.jpg);
-    @include retina {
-      background-image: url(../images/contacts/gamer_table_desk_2x.jpg);
-    }
+    border-radius: 14px;
   }
 }
 // ---TITLES/TEXT---

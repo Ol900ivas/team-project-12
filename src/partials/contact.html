@@ -13,6 +13,41 @@
     <div class="line-bottom line-1-bottom"></div>
     <div class="line-bottom line-2-bottom"></div>
     <div class="line-bottom line-3-bottom"></div>
+    <div class="container picture__container">
+      <picture class="contacts__picture">
+        <source
+          srcset="
+            ./images/contacts/gamer_table_desk_1x.jpg 1x,
+            ./images/contacts/gamer_table_desk_2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/contacts/gamer_table_tab_1x.jpg 1x,
+            ./images/contacts/gamer_table_tab_2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/contacts/gamer_table_mob_1x.jpg 1x,
+            ./images/contacts/gamer_table_mob_2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          srcset="
+            ./images/contacts/gamer_table_desk_1x.jpg 1x,
+            ./images/contacts/gamer_table_desk_2x.jpg 2x
+          "
+          class="contacts__photo"
+          src="./images/main/banner1.jpg"
+          alt="device"
+          width="100%"
+        />
+      </picture>
+    </div>
   </div>
 
   <div class="container main__container">
@@ -95,7 +130,9 @@
             ></textarea>
           </div>
         </div>
-        <button type="submit" data-modal-open class="submit-button">Send</button>
+        <button type="submit" data-modal-open class="submit-button">
+          Send
+        </button>
       </form>
     </div>
   </div>
