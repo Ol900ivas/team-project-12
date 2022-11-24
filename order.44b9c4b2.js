@@ -1,0 +1,2 @@
+!function(){var e=document.querySelectorAll(".js-open-modal"),t=document.querySelector(".js-modal-overlay"),o=document.querySelectorAll(".js-modal-close");e.forEach((function(e){e.addEventListener("click",(function(e){e.preventDefault();var o=this.getAttribute("data-modal"),s=document.querySelector('.js-modal[data-modal="'+o+'"]');t.classList.add("is-show"),s.classList.add("is-show")}))})),o.forEach((function(e){e.addEventListener("click",(function(){this.parentNode.classList.remove("is-show"),t.classList.remove("is-show")}))}))}();
+//# sourceMappingURL=order.44b9c4b2.js.map
