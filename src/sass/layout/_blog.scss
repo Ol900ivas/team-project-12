@@ -65,6 +65,10 @@
     padding-left: 99px;
     font-size: 56px;
     line-height: 1.17;
+    margin-bottom: 67px;
+  }
+  @include desktop {
+    margin-bottom: 75px;
   }
 }
 
