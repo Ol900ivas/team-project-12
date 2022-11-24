@@ -335,6 +335,9 @@
       height: 70px;
       font-size: 32px;
     }
+    @include desktop {
+      margin: 0 auto;
+    }
   }
 }
 
