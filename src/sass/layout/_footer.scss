@@ -39,8 +39,9 @@
   color: var(--main-text-color);
 }
 
-.menu-list {
+.footer .menu-list {
   margin-right: 160px;
+  margin-bottom: 24px;
 
   @include tablet {
     margin-right: 89px;
