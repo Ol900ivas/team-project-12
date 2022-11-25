@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0;
   margin: 0 auto;
-  background-image: url('../images/blog/bg-tabl.jpg');
+  background-image: url('../images/blog/bg.jpg');
 
   @include mobile {
     width: 480px;
@@ -10,10 +10,120 @@
 
   @include tablet {
     width: 768px;
+    background-image: url('../images/blog/bg-tabl.jpg');
   }
 
   @include desktop {
     width: 1200px;
+    background-image: url('../images/blog/bg-dsct.jpg');
+  }
+}
+
+.blog-lines {
+  position: relative;
+  width: 100%;
+}
+
+.blog-line-top,
+.blog-line-bottom {
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: #28780d;
+}
+
+.blog-line-top {
+  background-color: #7be34a;
+  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+}
+
+.blog-line-top-1 {
+  width: 50vw;
+  top: 43px;
+  left: calc((100% - 100vw) / 2);
+
+  @include tablet {
+    top: 121px;
+  }
+
+  @include desktop {
+    width: 40vw;
+  }
+}
+
+.blog-line-top-2 {
+  width: 1px;
+  height: 11px;
+  top: 33px;
+  left: calc(50vw + ((100% - 100vw) / 2));
+
+  @include tablet {
+    top: 111px;
+  }
+
+  @include desktop {
+    left: calc(40vw + ((100% - 100vw) / 2));
+  }
+}
+
+.blog-line-top-3 {
+  width: 50vw;
+  height: 1px;
+  top: 33px;
+  left: calc(50vw + ((100% - 100vw) / 2));
+
+  @include tablet {
+    top: 110px;
+  }
+
+  @include desktop {
+    width: 60vw;
+    left: calc(40vw + ((100% - 100vw) / 2));
+  }
+}
+
+.blog-line-bottom-1 {
+  width: calc(50vw + 8px);
+  top: 51px;
+  left: calc((100% - 100vw) / 2);
+
+  @include tablet {
+    top: 129px;
+  }
+
+  @include desktop {
+    width: calc(40vw + 8px);
+  }
+}
+
+.blog-line-bottom-2 {
+  width: 1px;
+  height: 11px;
+  top: 41px;
+  left: calc(50vw + ((100% - 100vw) / 2) + 8px);
+
+  @include tablet {
+    top: 119px;
+  }
+
+  @include desktop {
+    left: calc(40vw + ((100% - 100vw) / 2) + 8px);
+  }
+}
+
+.blog-line-bottom-3 {
+  width: 50vw;
+  height: 1px;
+  top: 41px;
+  left: calc(50vw + ((100% - 100vw) / 2) + 8px);
+
+  @include tablet {
+    top: 118px;
+  }
+
+  @include desktop {
+    width: 60vw;
+    left: calc(40vw + ((100% - 100vw) / 2) + 8px);
   }
 }
 
