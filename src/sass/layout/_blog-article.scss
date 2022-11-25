@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 48px;
+  // margin-bottom: 48px;
   background-image: url(../images/bg/bg-mob.jpg);
 
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
 
   @include tablet {
     width: 768px;
-    margin-bottom: 120px;
+    // margin-bottom: 120px;
     background-image: url(../images/bg/bg-tab.jpg);
 
     background-repeat: no-repeat;
@@ -96,7 +96,6 @@
   }
   @include desktop {
     align-self: flex-start;
-    // margin-right: 120px;
     margin-left: 0;
     margin-bottom: 0;
   }
@@ -161,41 +160,51 @@
   }
 }
 .article-content,
-.article-content--desk {
+.article-content--desk,
+.article-content--mob-tab {
+  font-size: 16px;
+  line-height: 1.17;
   padding-left: 16px;
   padding-right: 16px;
+  margin-bottom: 18px;
   
   color: var(--main-text-color);
   @include tablet {
     font-size: 24px;
-    line-height: 1.16;
+    line-height: 1.17;
     padding-left: 0px;
-      padding-right: 0px;
+    padding-right: 0px;
     
   }
 }
+.article-paragraph:not(:last-child) {
+  margin-bottom: 18px;
+  @include tablet {
+    margin-bottom: 28px;
+  }
+}
+
 
 .article-content {
 padding-bottom: 48px;
+margin-bottom: 0;
 @include tablet {
         padding-bottom: 120px;
   }
 }
 
 .article-content--mob-tab {
-  @include desktop {
+   @include desktop {
       display: none;
     }
+
 }
 
 .article-content--desk {
-  @include tablet {
-      padding-bottom: 24px;
-    }
-  @include desktop {
+    @include desktop {
     display: block;
       width: 690px;
-      padding: 0 0;
+      margin-bottom: 0;
           }
 }
 
