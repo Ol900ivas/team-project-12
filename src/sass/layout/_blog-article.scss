@@ -2,6 +2,7 @@
   width: 100%;
   padding: 0;
   margin: 0 auto;
+  margin-bottom: 48px;
   background-image: url(../images/bg/bg-mob.jpg);
   
     background-repeat: no-repeat;
@@ -18,6 +19,7 @@
 
   @include tablet {
     width: 768px;
+    margin-bottom: 120px;
     background-image: url(../images/bg/bg-tab.jpg);
     
       background-repeat: no-repeat;
