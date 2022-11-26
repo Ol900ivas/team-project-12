@@ -200,65 +200,78 @@
         <form class="order-form">
           <div class="order-form__desktop">
             <div class="order-form__desktop--left">
-              <label>
-                <span class="order-form__underline-title">Name</span>
-                <input
-                  class="order-form__item"
-                  type="text"
-                  name="user-name"
-                  required
-                />
-              </label>
-
-              <label>
-                <span class="order-form__underline-title">Email</span>
-                <input
-                  class="order-form__item"
-                  type="email"
-                  name="user-email"
-                  required
-                />
-              </label>
-
-              <label>
-                <span class="order-form__underline-title">Color Option</span>
-                <input
-                  class="order-form__item"
-                  type="text"
-                  name="color-option"
-                  required
-                />
-              </label>
-
-              <label>
-                <span class="order-form__underline-title">Quantity</span>
-                <input
-                  class="order-form__item"
-                  type="text"
-                  name="quantity"
-                  required
-                />
-              </label>
-
-              <label>
-                <span class="order-form__underline-title">Payment</span>
-                <input
-                  class="order-form__item"
-                  type="text"
-                  name="payment"
-                  required
-                />
+              <div class="modal-field">
+                <label for="user-name" class="order-form__underline-title">
+                  <input
+                    class="order-form__item"
+                    type="text"
+                    name="user-name"
+                    required
+                    placeholder="Name"
+                  />
+                </label>
+              </div>
+              <div class="modal-field">
+                <label for="user-email" class="order-form__underline-title">
+                  <!-- <span class="order-form__underline-title">Email</span> -->
+                  <input
+                    class="order-form__item"
+                    type="email"
+                    name="user-email"
+                    required
+                    placeholder="Email"
+                  />
+                </label>
+              </div>
+              <div class="modal-field">
+                <label for="color-option" class="order-form__underline-title">
+                  <!-- <span class="order-form__underline-title">Color Option</span> -->
+                  <input
+                    class="order-form__item"
+                    type="text"
+                    name="color-option"
+                    required
+                    placeholder="Color Option"
+                  />
+                </label>
+              </div>
+              <div class="modal-field">
+                <label for="quantity" class="order-form__underline-title">
+                  <!-- <span class="order-form__underline-title">Quantity</span> -->
+                  <input
+                    class="order-form__item"
+                    type="text"
+                    name="quantity"
+                    required
+                    placeholder="Quantity"
+                  />
+                </label>
+              </div>
+              <div class="modal-field">
+                <label for="payment" class="order-form__underline-title">
+                  <!-- <span class="order-form__underline-title">Payment</span> -->
+                  <input
+                    class="order-form__item"
+                    type="text"
+                    name="payment"
+                    required
+                    placeholder="Payment"
+                  />
+                </label>
+              </div>
+            </div>
+            <div class="modal-field-comment">
+              <label class="order-form__comment-section">
+                <span class="order-form__comment-title"
+                  >Leave your message</span
+                >
+                <textarea
+                  name="user-comment"
+                  class="order-form__comment"
+                  placeholder=""
+                ></textarea>
               </label>
             </div>
-
-            <label class="order-form__comment-section">
-              <span class="order-form__comment-title">Leave your message</span>
-              <textarea
-                name="user-comment"
-                class="order-form__comment"
-                placeholder=""
-              ></textarea>
-            </label>
           </div>
           <div class="order-form__button--desktop">
             <button

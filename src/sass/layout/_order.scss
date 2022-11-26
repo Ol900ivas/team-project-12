@@ -168,7 +168,7 @@
 .order-form__desktop {
   @include desktop {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     width: 1200px;
     margin-bottom: 48px;
   }
@@ -176,7 +176,7 @@
 .order-form__desktop--left {
   @include desktop {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
 .order-form__underline-title {
@@ -465,7 +465,7 @@
   // visibility: hidden;
   // z-index: 30;
   // width: 80%;
-.r-order-backdrop &,
+  .r-order-backdrop &,
   .order-backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.6);
   }
@@ -558,4 +558,4 @@
 .r-order-modal.is-show {
   opacity: 1;
   visibility: visible;
-  }
+}
