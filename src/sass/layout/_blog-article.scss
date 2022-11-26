@@ -89,10 +89,12 @@
 .article-image {
   margin-bottom: 20px;
   width: 100%;
+  display: block;
   @include tablet {
     width: 387px;
     border-radius: 12px;
     margin-left: 40px;
+    overflow: hidden;
   }
   @include desktop {
     align-self: flex-start;
@@ -129,9 +131,9 @@
     margin-bottom: 32px;
     width: 134px;
   }
-    @include desktop {
-      width: auto;
-    }
+  @include desktop {
+    width: auto;
+  }
 }
 
 .article-date {
@@ -147,16 +149,16 @@
     line-height: 100%;
     width: 261px;
   }
-    @include desktop {
-      width: auto;
-    }
+  @include desktop {
+    width: auto;
+  }
 }
 
 .article-desk-wrap {
   display: block;
   @include desktop {
-  display: flex;
-  margin-bottom: 24px;
+    display: flex;
+    margin-bottom: 24px;
   }
 }
 .article-content,
@@ -167,14 +169,13 @@
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 18px;
-  
+
   color: var(--main-text-color);
   @include tablet {
     font-size: 24px;
     line-height: 1.17;
     padding-left: 0px;
     padding-right: 0px;
-    
   }
 }
 .article-paragraph:not(:last-child) {
@@ -184,28 +185,26 @@
   }
 }
 
-
 .article-content {
-padding-bottom: 48px;
-margin-bottom: 0;
-@include tablet {
-        padding-bottom: 120px;
+  padding-bottom: 48px;
+  margin-bottom: 0;
+  @include tablet {
+    padding-bottom: 120px;
   }
 }
 
 .article-content--mob-tab {
-   @include desktop {
-      display: none;
-    }
-
+  @include desktop {
+    display: none;
+  }
 }
 
 .article-content--desk {
-    @include desktop {
+  @include desktop {
     display: block;
-      width: 690px;
-      margin-bottom: 0;
-          }
+    width: 690px;
+    margin-bottom: 0;
+  }
 }
 
 .article-list-mobile__list {
