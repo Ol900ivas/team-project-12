@@ -80,13 +80,13 @@
                   "
                   media="(min-width:768px)"
                 />
-                <source
+                <!-- <source
                   srcset="
                     images/take-order/var1-mob.jpg    1x,
                     images/take-order/var1-mob-2x.jpg 2x
                   "
                   media="(min-width:480px)"
-                />
+                /> -->
                 <img
                   class="order-product__color"
                   src="images/take-order/var1.jpg"
@@ -112,13 +112,13 @@
                   media="(min-width:768px)"
                 />
 
-                <source
+                <!-- <source
                   srcset="
                     images/take-order/var2-mob.jpg    1x,
                     images/take-order/var2-mob-2x.jpg 2x
                   "
                   media="(min-width:480px)"
-                />
+                /> -->
                 <img
                   class="order-product__color"
                   src="images/take-order/var2.jpg"
@@ -144,13 +144,13 @@
                   media="(min-width:768px)"
                 />
 
-                <source
+                <!-- <source
                   srcset="
                     images/take-order/var3-mob.jpg    1x,
                     images/take-order/var3-mob-2x.jpg 2x
                   "
                   media="(min-width:480px)"
-                />
+                /> -->
                 <img
                   class="order-product__color"
                   src="images/take-order/var3.jpg"
@@ -175,13 +175,13 @@
                   "
                   media="(min-width:768px)"
                 />
-                <source
+                <!-- <source
                   srcset="
                     images/take-order/var4-mob.jpg    1x,
                     images/take-order/var4-mob-2x.jpg 2x
                   "
                   media="(min-width:480px)"
-                />
+                /> -->
                 <img
                   class="order-product__color"
                   src="images/take-order/var4.jpg"
@@ -201,56 +201,200 @@
           <div class="order-form__desktop">
             <div class="order-form__desktop--left">
               <label>
-                <span class="order-form__underline-title">Name</span>
                 <input
                   class="order-form__item"
                   type="text"
                   name="user-name"
+                  placeholder="Name"
                   required
                 />
+                <div class="order-form__underline-title"></div>
               </label>
 
               <label>
-                <span class="order-form__underline-title">Email</span>
                 <input
                   class="order-form__item"
                   type="email"
                   name="user-email"
+                  placeholder="Email"
                   required
                 />
+                <div class="order-form__underline-title"></div>
               </label>
 
-              <label>
-                <span class="order-form__underline-title">Color Option</span>
-                <input
-                  class="order-form__item"
-                  type="text"
-                  name="color-option"
-                  required
-                />
-              </label>
+              <input type="reset" class="reset" value="Color Option" />
+              <div class="__select __color__select" data-state="">
+                <div
+                  class="__select__title __color__title"
+                  data-default="Color Option"
+                >
+                  Color Option
+                </div>
+                <div class="__select__content">
+                  <input
+                    id="singleSelect0"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                    checked
+                  />
+                  <label
+                    for="singleSelect0"
+                    class="__select__label __color__label"
+                    >Color Option</label
+                  >
+                  <input
+                    id="singleSelect1"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label
+                    for="singleSelect1"
+                    class="__select__label __color__label"
+                    >K9D Black Orange</label
+                  >
+                  <input
+                    id="singleSelect2"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label
+                    for="singleSelect2"
+                    class="__select__label __color__label"
+                    >K9D Silver Gray</label
+                  >
+                  <input
+                    id="singleSelect3"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label
+                    for="singleSelect3"
+                    class="__select__label __color__label"
+                    >K9U White Blue</label
+                  >
+                </div>
+              </div>
 
-              <label>
-                <span class="order-form__underline-title">Quantity</span>
-                <input
-                  class="order-form__item"
-                  type="text"
-                  name="quantity"
-                  required
-                />
-              </label>
+              <input type="reset" class="reset" value="Quantity" />
+              <div class="__select __quantity__select" data-state="">
+                <div
+                  class="__select__title __quantity__title"
+                  data-default="Quantity"
+                >
+                  Quantity
+                </div>
+                <div class="__select__content">
+                  <input
+                    id="singleSelect0"
+                    class="__select__input __quantity__input"
+                    type="radio"
+                    name="singleSelect"
+                    checked
+                  />
+                  <label
+                    for="singleSelect0"
+                    class="__select__label __quantity__label"
+                    >Quantity</label
+                  >
+                  <input
+                    id="sАingleSelect1"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label
+                    for="singleSelect1"
+                    class="__select__label __quantity__label"
+                    >One</label
+                  >
+                  <input
+                    id="singleSelect2"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label
+                    for="singleSelect2"
+                    class="__select__label __quantity__label"
+                    >Two</label
+                  >
+                  <input
+                    id="singleSelect3"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label
+                    for="singleSelect3"
+                    class="__select__label __quantity__label"
+                    >Three</label
+                  >
+                </div>
+              </div>
 
-              <label>
-                <span class="order-form__underline-title">Payment</span>
-                <input
-                  class="order-form__item"
-                  type="text"
-                  name="payment"
-                  required
-                />
-              </label>
+              <input type="reset" class="reset" value="Payment" />
+              <div class="__select __payment__select" data-state="">
+                <div
+                  class="__select__title __payment__title"
+                  data-default="Payment"
+                >
+                  Payment
+                </div>
+                <div class="__select__content">
+                  <input
+                    id="singleSelect0"
+                    class="__select__input __payment__input"
+                    type="radio"
+                    name="singleSelect"
+                    checked
+                  />
+                  <label
+                    for="singleSelect0"
+                    class="__select__label __payment__label"
+                    >Payment</label
+                  >
+                  <input
+                    id="sАingleSelect1"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label
+                    for="singleSelect1"
+                    class="__select__label __payment__label"
+                    >Cash</label
+                  >
+                  <input
+                    id="singleSelect2"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label
+                    for="singleSelect2"
+                    class="__select__label __payment__label"
+                    >Credit Card</label
+                  >
+                  <input
+                    id="singleSelect3"
+                    class="__select__input"
+                    type="radio"
+                    name="singleSelect"
+                  />
+                  <label
+                    for="singleSelect3"
+                    class="__select__label __payment__label"
+                    >PayPal</label
+                  >
+                </div>
+              </div>
             </div>
 
+            
             <label class="order-form__comment-section">
               <span class="order-form__comment-title">Leave your message</span>
               <textarea
@@ -260,16 +404,17 @@
               ></textarea>
             </label>
           </div>
+
           <div class="order-form__button--desktop">
             <button
-              data-modal="hell"
+              data-modal="boy"
               class="order-form__button order-form__button--submit js-open-modal"
               type="submit"
             >
               buy it now
             </button>
             <button
-              data-modal="boy"
+              data-modal="hell"
               class="order-form__button order-form__button--add js-open-modal"
               type="submit"
             >
@@ -282,8 +427,8 @@
   </section>
 </main>
 <!-- modal left -->
-<div data-modal="hell" class="r-order-backdrop js-modal-overlay">
-  <div data-modal="hell" class="r-order-modal js-modal">
+<div data-modal="hell" class="order-backdrop js-modal-overlay">
+  <div data-modal="hell" class="order-modal js-modal">
     <button class="order-button-close js-modal-close">
       <svg width="15" height="15">
         <use href="images/modal-close.svg#modal-close"></use>
@@ -299,15 +444,16 @@
   </div>
 </div>
 <!-- modal right -->
-<div data-modal="boy" class="r-order-backdrop js-modal-overlay">
-  <div data-modal="boy" class="r-order-modal js-modal">
+<div data-modal="boy" class="order-backdrop js-modal-overlay">
+  <div data-modal="boy" class="order-modal js-modal">
     <button class="order-button-close js-modal-close">
       <svg width="15" height="15">
         <use href="images/modal-close.svg#modal-close"></use>
       </svg>
     </button>
     <p class="order-modal-buy-text">
-      Thank you for your order!<br />
+      Thank you <br />
+      for your order!<br />
       We will contact you soon!
       <a href="./accessories.html" class="link order-modal-button">
         <span class="order-modal-btn-text">Keep shopping</span>
@@ -317,4 +463,5 @@
 
   <script src="./js/modal.js"></script>
   <script src="./js/ordermodal.js"></script>
+  <script src="./js/select.js"></script>
 </div>
