@@ -19,14 +19,20 @@
       <picture class="article-image">
         <source
           srcset="images/blog/art1-desk.jpg 1x, images/blog/art1-desk.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/blog/blog-art-tabl-1x.jpg 1x,
+            ./images/blog/blog-art-tabl-2x.jpg 2x
+          "
           media="(min-width: 768px)"
         />
         <source
-          srcset="images/blog/art1-tab.jpg 1x, images/blog/art1-tab.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="images/blog/art1-mob.jpg 1x, images/blog/art1-mob-2x.jpg 2x"
+          srcset="
+            ./images/blog/blog-art-mob-1x.jpg 1x,
+            ./images/blog/blog-art-mob-2x.jpg 2x
+          "
           media="(max-width: 767px)"
         />
         <img
@@ -35,7 +41,6 @@
           width="367"
         />
       </picture>
-
       <div class="article-part">
         <p class="article-author">By Ray Ian Ampoloquio</p>
         <p class="article-date">Updated on September 21, 2022</p>
