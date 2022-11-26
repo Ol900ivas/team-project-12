@@ -68,6 +68,8 @@
   font-size: 24px;
   line-height: 1.16;
   @include tablet {
+    padding-left: 40px;
+    padding-right: 40px;
     font-size: 56px;
     line-height: 1;
     margin-bottom: 72px;
@@ -91,7 +93,7 @@
   @include tablet {
     min-width: 387px;
     border-radius: 12px;
-    margin-left: 0px;
+    margin-left: 40px;
     overflow: hidden;
   }
   @include desktop {
@@ -111,6 +113,7 @@
 }
 
 .article-part {
+  padding-right: 40px;
   @include desktop {
     display: none;
   }
@@ -172,16 +175,15 @@
   @include tablet {
     font-size: 24px;
     line-height: 1.17;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 1.17;
     padding-left: 0px;
     padding-right: 0px;
-  }
-}
-.article-paragraph,
-.article-list-mobile__paragraph,
-.article-list-mobile__title,
-.article-list-mobile__item {
-  @include desktop {
-    margin-left: 40px;
   }
 }
 
