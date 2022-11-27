@@ -2,6 +2,7 @@
   width: 100%;
   padding: 0;
   margin: 0 auto;
+  padding-top: 40px;
   // margin-bottom: 48px;
   background-image: url(../images/bg/bg-mob.jpg);
 
@@ -18,6 +19,7 @@
   }
 
   @include tablet {
+    padding-top: 120px;
     width: 768px;
     // margin-bottom: 120px;
     background-image: url(../images/bg/bg-tab.jpg);
@@ -32,6 +34,7 @@
   }
 
   @include desktop {
+    padding-top: 112px;
     width: 1280px;
     padding-left: 40px;
     padding-right: 40px;
@@ -58,7 +61,7 @@
 }
 
 .article-page-title {
-  padding-top: 40px;
+
   padding-left: 16px;
   padding-bottom: 31px;
   font-family: var(--medium-font);
@@ -66,13 +69,11 @@
   font-size: 24px;
   line-height: 1.16;
   @include tablet {
-    margin-top: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-size: 56px;
     line-height: 1;
     margin-bottom: 72px;
-  }
-  @include desktop {
-    margin-top: 112px;
   }
 }
 
@@ -89,10 +90,12 @@
 .article-image {
   margin-bottom: 20px;
   width: 100%;
+  display: block;
   @include tablet {
-    width: 387px;
+    min-width: 387px;
     border-radius: 12px;
     margin-left: 40px;
+    overflow: hidden;
   }
   @include desktop {
     align-self: flex-start;
@@ -111,6 +114,7 @@
 }
 
 .article-part {
+  padding-right: 40px;
   @include desktop {
     display: none;
   }
@@ -129,9 +133,9 @@
     margin-bottom: 32px;
     width: 134px;
   }
-    @include desktop {
-      width: auto;
-    }
+  @include desktop {
+    width: auto;
+  }
 }
 
 .article-date {
@@ -147,16 +151,16 @@
     line-height: 100%;
     width: 261px;
   }
-    @include desktop {
-      width: auto;
-    }
+  @include desktop {
+    width: auto;
+  }
 }
 
 .article-desk-wrap {
   display: block;
   @include desktop {
-  display: flex;
-  margin-bottom: 24px;
+    display: flex;
+    margin-bottom: 24px;
   }
 }
 .article-content,
@@ -167,16 +171,23 @@
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: 18px;
-  
+
   color: var(--main-text-color);
   @include tablet {
     font-size: 24px;
     line-height: 1.17;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 1.17;
     padding-left: 0px;
     padding-right: 0px;
-    
   }
 }
+
 .article-paragraph:not(:last-child) {
   margin-bottom: 18px;
   @include tablet {
@@ -184,28 +195,26 @@
   }
 }
 
-
 .article-content {
-padding-bottom: 48px;
-margin-bottom: 0;
-@include tablet {
-        padding-bottom: 120px;
+  padding-bottom: 48px;
+  margin-bottom: 0;
+  @include tablet {
+    padding-bottom: 120px;
   }
 }
 
 .article-content--mob-tab {
-   @include desktop {
-      display: none;
-    }
-
+  @include desktop {
+    display: none;
+  }
 }
 
 .article-content--desk {
-    @include desktop {
+  @include desktop {
     display: block;
-      width: 690px;
-      margin-bottom: 0;
-          }
+    width: 690px;
+    margin-bottom: 0;
+  }
 }
 
 .article-list-mobile__list {
@@ -213,6 +222,10 @@ margin-bottom: 0;
   margin: 0;
   @include tablet {
     padding: 0 40px;
+  }
+
+  @include desktop {
+    margin-bottom: 28px;
   }
 }
 

@@ -1,51 +1,166 @@
 <!--Hero-->
 <section class="hero">
   <div class="container hero__container">
+    <h1 class="hero__title-mob">
+      Best shop <br />
+      for buying <br />
+      gaming products
+    </h1>
     <h1 class="hero__title">
       Best shop for <br />
       buying gaming <br />
       products
     </h1>
     <div class="btn__left">
-      <a href="./order.html" class="hero__btn">Start shopping</a>
+      <a href="./accessories.html" class="hero__btn">Start shopping</a>
     </div>
   </div>
 </section>
 <!--Banner-->
 <section class="banner">
   <div class="container banner__container">
-    <picture class="banner__picture">
-      <source
-        srcset="./images/main/banner1.jpg 1x, ./images/main/banner1-2x.jpg 2x"
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ./images/main/banner1-tab.jpg    1x,
-          ./images/main/banner1-tab-2x.jpg 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/main/banner1-mob.jpg    1x,
-          ./images/main/banner1-mob-2x.jpg 2x
-        "
-        media="(max-width: 767px)"
-      />
-      <img
-        srcset="./images/main/banner1.jpg 1x, ./images/main/banner1-2x.jpg 2x"
-        class="banner__photo"
-        src="./images/main/banner1.jpg"
-        alt="device"
-        width="100%"
-      />
-    </picture>
-    <h2 class="banner__title">
-      One place for <br />
-      everything you want
-    </h2>
+    <h2 class="gallery__title visually-hidden">Gallery</h2>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture class="banner__picture">
+            <source
+              srcset="
+                ./images/main/banner1.jpg    1x,
+                ./images/main/banner1-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/main/banner1-tab.jpg    1x,
+                ./images/main/banner1-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/main/banner1-mob.jpg    1x,
+                ./images/main/banner1-mob-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              srcset="
+                ./images/main/banner1.jpg    1x,
+                ./images/main/banner1-2x.jpg 2x
+              "
+              class="banner__photo"
+              src="./images/main/banner1.jpg"
+              alt="device"
+              width="100%"
+            />
+          </picture>
+          <h2 class="banner__title-mob">
+            One place <br />
+            for everything you want
+          </h2>
+          <h2 class="banner__title">
+            One place for <br />
+            everything you want
+          </h2>
+        </div>
+        <div class="swiper-slide">
+          <picture class="banner__picture">
+            <source
+              srcset="
+                ./images/main/banner2.jpg    1x,
+                ./images/main/banner2-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/main/banner2-tab.jpg    1x,
+                ./images/main/banner2-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/main/banner2-mob.jpg    1x,
+                ./images/main/banner2-mob-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              srcset="
+                ./images/main/banner2.jpg    1x,
+                ./images/main/banner2-2x.jpg 2x
+              "
+              class="banner__photo"
+              src="./images/main/banner2.jpg"
+              alt="device"
+              width="100%"
+            />
+          </picture>
+          <!-- <h2 class="banner__title-mob">
+      One place <br />
+      for everything you want
+    </h2> -->
+          <h2 class="banner__title-2">
+            Best shop for buying <br />
+            gaming products
+          </h2>
+        </div>
+        <div class="swiper-slide">
+          <picture class="banner__picture">
+            <source
+              srcset="
+                ./images/main/banner3.jpg    1x,
+                ./images/main/banner3-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/main/banner3-tab.jpg    1x,
+                ./images/main/banner3-tab-2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/main/banner3-mob.jpg    1x,
+                ./images/main/banner3-mob-2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              srcset="
+                ./images/main/banner3.jpg    1x,
+                ./images/main/banner3-2x.jpg 2x
+              "
+              class="banner__photo"
+              src="./images/main/banner3.jpg"
+              alt="device"
+              width="100%"
+            />
+          </picture>
+          <!-- <h2 class="banner__title-mob">
+      One place <br />
+      for everything you want
+    </h2> -->
+          <h2 class="banner__title-3">
+            High-quality products <br />
+            in lowest price
+          </h2>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
+
   <div class="marker">
     <span
       class="marker__rad"
@@ -61,7 +176,6 @@
       aria-label="Go to slide 2"
       aria-current="true"
     ></span>
-
     <span
       class="marker__rad"
       tabindex="0"
@@ -86,7 +200,7 @@
     <div class="list__and">
       <ul class="list list__mob">
         <li class="sale__item">
-          <a href="">
+          <a href="./order.html" class="sale__card">
             <picture>
               <source
                 srcset="./images/main/img1.jpg 1x, ./images/main/img1-2x.jpg 2x"
@@ -114,139 +228,145 @@
                 alt="sale-device"
               />
             </picture>
+            <div class="sale__inform">
+              <p class="sale__link">
+                Xiberia K9 PRO PC <br />
+                Headset
+              </p>
+              <div class="price">
+                <p class="price__old">65.14 USD</p>
+                <p class="price__new">55.14 USD</p>
+              </div>
+            </div>
           </a>
-          <div class="sale__inform">
-            <a href="" class="sale__link"
-              >Xiberia K9 PRO PC <br />
-              Headset</a
-            >
-            <div class="price">
-              <p class="price__old">65.14 USD</p>
-              <p class="price__new">55.14 USD</p>
-            </div>
-          </div>
         </li>
         <li class="sale__item">
-          <picture>
-            <source
-              srcset="./images/main/img2.jpg 1x, ./images/main/img2-2x.jpg 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/main/img2-tab.jpg    1x,
-                ./images/main/img2-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              class="sale__picture"
-              srcset="
-                ./images/main/img2-mob.jpg    1x,
-                ./images/main/img2-mob-2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              srcset="./images/main/img2.jpg 1x, ./images/main/img2-2x.jpg 2x"
-              class="sale__photo"
-              src="./images/main/img2.jpg"
-              alt="sale-device"
-            />
-          </picture>
-          <div class="sale__inform">
-            <a href="" class="sale__link"
-              >RGB LED Backlit <br />
-              Mechanical Keyboard</a
-            >
-            <div class="price">
-              <p class="price__old">156.00 USD</p>
-              <p class="price__new">116.00 USD</p>
+          <a href="./order.html" class="sale__card">
+            <picture>
+              <source
+                srcset="./images/main/img2.jpg 1x, ./images/main/img2-2x.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/main/img2-tab.jpg    1x,
+                  ./images/main/img2-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                class="sale__picture"
+                srcset="
+                  ./images/main/img2-mob.jpg    1x,
+                  ./images/main/img2-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                srcset="./images/main/img2.jpg 1x, ./images/main/img2-2x.jpg 2x"
+                class="sale__photo"
+                src="./images/main/img2.jpg"
+                alt="sale-device"
+              />
+            </picture>
+            <div class="sale__inform">
+              <p class="sale__link">
+                RGB LED Backlit <br />
+                Mechanical Keyboard
+              </p>
+              <div class="price">
+                <p class="price__old">156.00 USD</p>
+                <p class="price__new">116.00 USD</p>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
         <li class="sale__item">
-          <picture>
-            <source
-              srcset="./images/main/img3.jpg 1x, ./images/main/img3-2x.jpg 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/main/img3-tab.jpg    1x,
-                ./images/main/img3-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              class="sale__picture"
-              srcset="
-                ./images/main/img3-mob.jpg    1x,
-                ./images/main/img3-mob-2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              srcset="./images/main/img3.jpg 1x, ./images/main/img3-2x.jpg 2x"
-              class="sale__photo"
-              src="./images/main/img3.jpg"
-              alt="sale-device"
-            />
-          </picture>
-          <div class="sale__inform">
-            <a href="" class="sale__link"
-              >G95 Light Surround <br />
-              Gaming Headset</a
-            >
-            <div class="price">
-              <p class="price__old">78.98 USD</p>
-              <p class="price__new">50.98 USD</p>
+          <a href="./order.html" class="sale__card">
+            <picture>
+              <source
+                srcset="./images/main/img3.jpg 1x, ./images/main/img3-2x.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/main/img3-tab.jpg    1x,
+                  ./images/main/img3-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                class="sale__picture"
+                srcset="
+                  ./images/main/img3-mob.jpg    1x,
+                  ./images/main/img3-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                srcset="./images/main/img3.jpg 1x, ./images/main/img3-2x.jpg 2x"
+                class="sale__photo"
+                src="./images/main/img3.jpg"
+                alt="sale-device"
+              />
+            </picture>
+            <div class="sale__inform">
+              <p class="sale__link">
+                G95 Light Surround <br />
+                Gaming Headset
+              </p>
+              <div class="price">
+                <p class="price__old">78.98 USD</p>
+                <p class="price__new">50.98 USD</p>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
         <li class="sale__item">
-          <picture>
-            <source
-              srcset="./images/main/img4.jpg 1x, ./images/main/img4-2x.jpg 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/main/img4-tab.jpg    1x,
-                ./images/main/img4-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              class="sale__picture"
-              srcset="
-                ./images/main/img4-mob.jpg    1x,
-                ./images/main/img4-mob-2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              srcset="./images/main/img4.jpg 1x, ./images/main/img4-2x.jpg 2x"
-              class="sale__photo"
-              src="./images/main/img4.jpg"
-              alt="sale-device"
-            />
-          </picture>
-          <div class="sale__inform">
-            <a href="" class="sale__link"
-              >Malloom 1200 DPI 2.4Ghz <br />
-              Wireless Mouse</a
-            >
-            <div class="price">
-              <p class="price__old">44.24 USD</p>
-              <p class="price__new">29.93 USD</p>
+          <a href="./order.html" class="sale__card">
+            <picture>
+              <source
+                srcset="./images/main/img4.jpg 1x, ./images/main/img4-2x.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/main/img4-tab.jpg    1x,
+                  ./images/main/img4-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                class="sale__picture"
+                srcset="
+                  ./images/main/img4-mob.jpg    1x,
+                  ./images/main/img4-mob-2x.jpg 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                srcset="./images/main/img4.jpg 1x, ./images/main/img4-2x.jpg 2x"
+                class="sale__photo"
+                src="./images/main/img4.jpg"
+                alt="sale-device"
+              />
+            </picture>
+            <div class="sale__inform">
+              <p class="sale__link">
+                Malloom 1200 DPI 2.4Ghz <br />
+                Wireless Mouse
+              </p>
+              <div class="price">
+                <p class="price__old">44.24 USD</p>
+                <p class="price__new">29.93 USD</p>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
       </ul>
       <ul class="list list__tab">
         <li class="sale__item">
-          <a href="">
+          <a href="./order.html" class="sale__card">
             <picture>
               <source
                 srcset="./images/main/img5.jpg 1x, ./images/main/img5-2x.jpg 2x"
@@ -266,110 +386,116 @@
                 alt="sale-device"
               />
             </picture>
+            <div class="sale__inform">
+              <p class="sale__link">
+                G95 Light Surround <br />
+                Gaming Headset
+              </p>
+              <div class="price">
+                <p class="price__old">72.78 USD</p>
+                <p class="price__new">51.78 USD</p>
+              </div>
+            </div>
           </a>
-          <div class="sale__inform">
-            <a href="" class="sale__link"
-              >G95 Light Surround <br />
-              Gaming Headset</a
-            >
-            <div class="price">
-              <p class="price__old">72.78 USD</p>
-              <p class="price__new">51.78 USD</p>
-            </div>
-          </div>
         </li>
         <li class="sale__item">
-          <picture>
-            <source
-              srcset="./images/main/img6.jpg 1x, ./images/main/img6-2x.jpg 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/main/img6-tab.jpg    1x,
-                ./images/main/img6-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <img
-              srcset="./images/main/img6.jpg 1x, ./images/main/img6-2x.jpg 2x"
-              class="sale__photo"
-              src=" ./images/main/img6.jpg"
-              alt="sale-device"
-            />
-          </picture>
-          <div class="sale__inform">
-            <a href="" class="sale__link"
-              >K569 RGB LED Backlit <br />
-              Mechanical Keyboard</a
-            >
-            <div class="price">
-              <p class="price__old">156.98 USD</p>
-              <p class="price__new">112.16 USD</p>
+          <a href="./order.html" class="sale__card">
+            <picture>
+              <source
+                srcset="./images/main/img6.jpg 1x, ./images/main/img6-2x.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/main/img6-tab.jpg    1x,
+                  ./images/main/img6-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                srcset="./images/main/img6.jpg 1x, ./images/main/img6-2x.jpg 2x"
+                class="sale__photo"
+                src=" ./images/main/img6.jpg"
+                alt="sale-device"
+              />
+            </picture>
+            <div class="sale__inform">
+              <p class="sale__link">
+                K569 RGB LED Backlit <br />
+                Mechanical Keyboard
+              </p>
+              <div class="price">
+                <p class="price__old">156.98 USD</p>
+                <p class="price__new">112.16 USD</p>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
         <li class="sale__item">
-          <picture>
-            <source
-              srcset="./images/main/img7.jpg 1x, ./images/main/img7-2x.jpg 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/main/img7-tab.jpg    1x,
-                ./images/main/img7-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <img
-              srcset="./images/main/img7.jpg 1x, ./images/main/img7-2x.jpg 2x"
-              class="sale__photo"
-              src=" ./images/main/img7.jpg"
-              alt="sale-device"
-            />
-          </picture>
-          <div class="sale__inform">
-            <a href="" class="sale__link"
-              >DARSHION 3200 DPI <br />
-              MZ-17 Gaming Mouse
-            </a>
-            <div class="price">
-              <p class="price__old">48.00 USD</p>
-              <p class="price__new">32.00 USD</p>
+          <a href="./order.html" class="sale__card">
+            <picture>
+              <source
+                srcset="./images/main/img7.jpg 1x, ./images/main/img7-2x.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/main/img7-tab.jpg    1x,
+                  ./images/main/img7-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                srcset="./images/main/img7.jpg 1x, ./images/main/img7-2x.jpg 2x"
+                class="sale__photo"
+                src=" ./images/main/img7.jpg"
+                alt="sale-device"
+              />
+            </picture>
+            <div class="sale__inform">
+              <p class="sale__link">
+                DARSHION 3200 DPI <br />
+                MZ-17 Gaming Mouse
+              </p>
+              <div class="price">
+                <p class="price__old">48.00 USD</p>
+                <p class="price__new">32.00 USD</p>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
         <li class="sale__item">
-          <picture>
-            <source
-              srcset="./images/main/img8.jpg 1x, ./images/main/img8-2x.jpg 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./images/main/img8-tab.jpg    1x,
-                ./images/main/img8-tab-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <img
-              srcset="./images/main/img8.jpg 1x, ./images/main/img8-2x.jpg 2x"
-              class="sale__photo"
-              src=" ./images/main/img8.jpg"
-              alt="sale-device"
-            />
-          </picture>
-          <div class="sale__inform">
-            <a href="" class="sale__link"
-              >Logitech G230 Stereo <br />
-              Gaming Headset</a
-            >
-            <div class="price">
-              <p class="price__old">160.00 USD</p>
-              <p class="price__new">110.00 USD</p>
+          <a href="./order.html" class="sale__card">
+            <picture>
+              <source
+                srcset="./images/main/img8.jpg 1x, ./images/main/img8-2x.jpg 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/main/img8-tab.jpg    1x,
+                  ./images/main/img8-tab-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <img
+                srcset="./images/main/img8.jpg 1x, ./images/main/img8-2x.jpg 2x"
+                class="sale__photo"
+                src=" ./images/main/img8.jpg"
+                alt="sale-device"
+              />
+            </picture>
+            <div class="sale__inform">
+              <p class="sale__link">
+                Logitech G230 Stereo <br />
+                Gaming Headset
+              </p>
+              <div class="price">
+                <p class="price__old">160.00 USD</p>
+                <p class="price__new">110.00 USD</p>
+              </div>
             </div>
-          </div>
+          </a>
         </li>
       </ul>
     </div>
@@ -377,4 +503,8 @@
       <a href="./accessories.html" class="view-all__btn">View all</a>
     </div>
   </div>
+
+  <script src="./js/swiper.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </section>
