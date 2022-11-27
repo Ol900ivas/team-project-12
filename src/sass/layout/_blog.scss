@@ -254,3 +254,100 @@
     line-height: 100%;
   }
 }
+
+// ----------------lines
+.abl-lines {
+  position: relative;
+  width: 100%;
+  padding: 0 0 40px 15px;
+}
+.abl-line-top,
+.abl-line-bottom {
+  position: absolute;
+  display: block;
+  height: 1px;
+  background-color: var(--sub-underline-color);
+  box-shadow: var(--sub-underline-shadow);
+}
+.abl-line-top {
+  background-color: var(--top-underline-color);
+  box-shadow: var(--top-underline-shadow);
+}
+.abl-line1-top {
+  width: 50vw;
+  top: 43px;
+  left: calc((100% - 100vw) / 2);
+
+  @include tablet {
+    top: 86px;
+  }
+  @include desktop {
+    width: 40vw;
+  }
+}
+.abl-line2-top {
+  width: 1px;
+  height: 11px;
+  top: 33px;
+  left: calc(50vw + ((100% - 100vw) / 2));
+
+  @include tablet {
+    top: 76px;
+  }
+  @include desktop {
+    left: calc(40vw + ((100% - 100vw) / 2));
+  }
+}
+.abl-line3-top {
+  width: 50vw;
+  height: 1px;
+  top: 33px;
+  left: calc(50vw + ((100% - 100vw) / 2));
+
+  @include tablet {
+    top: 75px;
+  }
+  @include desktop {
+    width: 60vw;
+    left: calc(40vw + ((100% - 100vw) / 2));
+  }
+}
+.abl-line1-bottom {
+  width: calc(50vw + 8px);
+  top: 51px;
+  left: calc((100% - 100vw) / 2);
+
+  @include tablet {
+    top: 94px;
+  }
+  @include desktop {
+    width: calc(40vw + 8px);
+  }
+}
+.abl-line2-bottom {
+  width: 1px;
+  height: 11px;
+  top: 41px;
+  left: calc(50vw + ((100% - 100vw) / 2) + 8px);
+
+  @include tablet {
+    top: 84px;
+  }
+  @include desktop {
+    left: calc(40vw + ((100% - 100vw) / 2) + 8px);
+  }
+}
+.abl-line3-bottom {
+  width: calc(50vw - 8px);
+  height: 1px;
+  top: 41px;
+  left: calc(50vw + ((100% - 100vw) / 2) + 8px);
+
+  @include tablet {
+    top: 83px;
+  }
+  @include desktop {
+    width: calc(60vw - 8px);
+    left: calc(40vw + ((100% - 100vw) / 2) + 8px);
+  }
+}

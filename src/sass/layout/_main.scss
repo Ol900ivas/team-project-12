@@ -513,7 +513,7 @@
   }
 }
 .sale-line-bottom-3 {
-  width: 50vw;
+  width: calc(50vw - 8px);
   height: 1px;
   top: 41px;
   left: calc(50vw + ((100% - 100vw) / 2) + 8px);
@@ -521,7 +521,7 @@
     top: 83px;
   }
   @include desktop {
-    width: 60vw;
+    width: calc(60vw - 8px);
     left: calc(40vw + ((100% - 100vw) / 2) + 8px);
   }
 }
