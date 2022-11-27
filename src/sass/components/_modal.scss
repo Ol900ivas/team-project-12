@@ -1,0 +1,71 @@
+// ---MODAL WINDOW----
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.modal {
+  padding: 100px 29px;
+  max-width: 272px;
+  height: 395px;
+  width: 100%;
+  background-color: var(--main-background-color);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms linear;
+  @include tablet {
+    padding: 88px 25px;
+    max-width: 688px;
+    height: 524px;
+  }
+  @include desktop {
+    padding: 88px 65px;
+    max-width: 768px;
+    // height: 524px;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-button {
+  width: 31px;
+  height: 31px;
+  background-color: transparent;
+  border: none;
+
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  transition: cursor var(--duration) var(--timing-function);
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.modal-title {
+  margin-bottom: 32px;
+  font-weight: var(--medium-font);
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--main-text-color);
+  @include tablet {
+    margin-bottom: 80px;
+    font-size: 54px;
+    // real size, i ve changed it to: 56px;
+    line-height: 1.18;
+  }
+}
