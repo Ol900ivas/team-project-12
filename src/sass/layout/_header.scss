@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  z-index: 10;
   background: var(--main-background-color);
   box-shadow: var(--header-shadow);
 }
@@ -43,7 +44,7 @@
 
   color: #000000;
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow var(--duration) var(--timing-function);
 
   @include desktop {
     width: 102px;
@@ -71,6 +72,7 @@
 
 .header-container {
   display: flex;
+// z-index: 10;
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -137,7 +139,7 @@
 }
 
 .mob-menu {
-  display: none;
+  // display: none;
   // position: fixed;
   position: absolute;
   z-index: 1;
@@ -152,8 +154,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  overflow: auto;
-  // overflow: hidden;
+  // overflow: auto;
+  overflow: hidden;
 
   opacity: 0;
   visibility: hidden;
