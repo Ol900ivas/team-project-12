@@ -104,98 +104,107 @@
 
 // ZIG-ZAG LINES
 
-.lines {
+.ac-lines {
   position: relative;
   width: 100%;
 }
-.line-top1,
-.line-bottom1 {
+.ac-line-top,
+.ac-line-bottom {
   position: absolute;
   display: block;
   height: 1px;
   background-color: #28780d;
+  box-shadow: var(--sub-underline-shadow);
 }
-.line-top1 {
-  background-color: #7be34a;
-  box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+.ac-line-top {
+  background-color: var(--top-underline-color);
+  box-shadow: var(--top-underline-shadow);
 }
 
-.line-top-1x {
+.ac-line-top-1 {
   width: 60vw;
-  top: 32px;
+  top: 33px;
   left: calc((100% - 100vw) / 2);
+
   @include tablet {
-    width: 55vw;
-    top: 84px;
+    width: 65vw;
+    top: 76px;
   }
   @include desktop {
-    width: 32vw;
+    width: 45vw;
   }
 }
-.line-top-2x {
+.ac-line-top-2 {
   width: 1px;
   height: 11px;
-  top: 22px;
+  top: 23px;
   left: calc(60vw + ((100% - 100vw) / 2));
+
   @include tablet {
-    top: 74px;
-    left: calc(55vw + ((100% - 100vw) / 2));
+    top: 66px;
+    left: calc(65vw + ((100% - 100vw) / 2));
   }
   @include desktop {
-    left: calc(32vw + ((100% - 100vw) / 2));
+    left: calc(45vw + ((100% - 100vw) / 2));
   }
 }
-.line-top-3x {
-  width: 60vw;
+.ac-line-top-3 {
+  width: 40vw;
   height: 1px;
-  top: 22px;
+  top: 23px;
   left: calc(60vw + ((100% - 100vw) / 2));
+
   @include tablet {
-    top: 74px;
-    left: calc(55vw + ((100% - 100vw) / 2));
+    width: 35vw;
+    top: 65px;
+    left: calc(65vw + ((100% - 100vw) / 2));
   }
   @include desktop {
-    width: 70vw;
-    left: calc(32vw + ((100% - 100vw) / 2));
+    width: 55vw;
+    left: calc(45vw + ((100% - 100vw) / 2));
   }
 }
-.line-bottom-1x {
-  width: calc(60vw + 4px);
-  top: 36px;
+.ac-line-bottom-1 {
+  width: calc(60vw + 8px);
+  top: 41px;
   left: calc((100% - 100vw) / 2);
+
   @include tablet {
-    top: 90px;
-    width: calc(55vw + 4px);
+    top: 84px;
+    width: calc(65vw + 8px);
   }
   @include desktop {
-    width: calc(32vw + 4px);
+    width: calc(45vw + 8px);
   }
 }
-.line-bottom-2x {
+.ac-line-bottom-2 {
   width: 1px;
-  height: 10px;
-  top: 27px;
-  left: calc(60vw + ((100% - 100vw) / 2) + 4px);
+  height: 11px;
+  top: 31px;
+  left: calc(60vw + ((100% - 100vw) / 2) + 8px);
+
   @include tablet {
-    top: 81px;
-    left: calc(55vw + ((100% - 100vw) / 2) + 4px);
+    top: 74px;
+    left: calc(65vw + ((100% - 100vw) / 2) + 8px);
   }
   @include desktop {
-    left: calc(32vw + ((100% - 100vw) / 2) + 4px);
+    left: calc(45vw + ((100% - 100vw) / 2) + 8px);
   }
 }
-.line-bottom-3x {
-  width: 60vw;
+.ac-line-bottom-3 {
+  width: calc(40vw - 8px);
   height: 1px;
-  top: 26px;
-  left: calc(60vw + ((100% - 100vw) / 2) + 4px);
+  top: 31px;
+  left: calc(60vw + ((100% - 100vw) / 2) + 8px);
+  
   @include tablet {
-    top: 80px;
-    left: calc(55vw + ((100% - 100vw) / 2) + 4px);
+    width: calc(35vw - 8px);
+    top: 73px;
+    left: calc(65vw + ((100% - 100vw) / 2) + 8px);
   }
   @include desktop {
-    width: 70vw;
-    left: calc(32vw + ((100% - 100vw) / 2) + 4px);
+    width: calc(55vw - 8px);
+    left: calc(45vw + ((100% - 100vw) / 2) + 8px);
   }
 }
 
