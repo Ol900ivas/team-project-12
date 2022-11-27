@@ -57,7 +57,8 @@
     line-height: 1;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     box-shadow: var(--btn-shadow);
   }
 }
@@ -137,9 +138,11 @@
 
 .mob-menu {
   display: none;
+  // position: fixed;
   position: absolute;
   z-index: 1;
   top: 100%;
+  // top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -150,12 +153,28 @@
   background-position: center;
   background-size: cover;
   overflow: auto;
+  // overflow: hidden;
+
+  // opacity: 0;
+  // visibility: hidden;
+  // pointer-events: none;
+  transform: translateY(-100%);
+  transition: transform 2000ms var(--timing-function);
+
+  // opacity 2000ms var(--timing-function),
+  //     visibility 2000ms var(--timing-function);
 
   box-shadow: inset 0px 4px 10px rgba(97, 162, 58, 0.2),
     0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
 
   &.is-open {
     display: block;
+    // opacity: 1;
+    // visibility: visible;
+    // pointer-events: initial;
+    transform: translateY(0);
+    // transition: opacity 2000ms var(--timing-function),
+    //     visibility 2000ms var(--timing-function);
   }
   @include retina {
     background-image: url(/src/images/bg/menu-bg-mob-2x.jpg);
@@ -169,6 +188,10 @@
       background-image: url(/src/images/bg/menu-bg-tab-2x.jpg);
     }
   }
+  // transform: opacity (1);
+  // transition: transform 2000ms linear;
+
+  // transform: translateY(0) 2000ms var(--timing-function);
 }
 
 .mob-menu .menu-list {
