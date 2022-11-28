@@ -47,6 +47,7 @@
 .list-button {
   display: flex;
   gap: 24px;
+  justify-content: center;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
     gap: 24px;
@@ -98,8 +99,8 @@
   margin-bottom: 27px;
   @include tablet {
     font-size: 56px;
-      line-height: 1.18;
-      margin-bottom: 51px;
+    line-height: 1.18;
+    margin-bottom: 51px;
   }
 }
 
@@ -108,8 +109,7 @@
 .ac-lines {
   position: relative;
   width: 97%;
-  
-  }
+}
 .ac-line-top,
 .ac-line-bottom {
   position: absolute;
@@ -198,7 +198,7 @@
   height: 1px;
   top: 31px;
   left: calc(60vw + ((100% - 100vw) / 2) + 8px);
-  
+
   @include tablet {
     width: calc(35vw - 8px);
     top: 73px;
@@ -318,6 +318,7 @@
   line-height: 26px;
   flex-grow: 0;
   margin-right: 8px;
+  margin-bottom: 11px;
 }
 
 .list-card__price {
@@ -325,6 +326,7 @@
   gap: 80px;
   margin-right: 8px;
   margin-bottom: 11px;
+  justify-content: space-between;
 }
 
 .list-cards__text1 {
