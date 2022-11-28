@@ -258,93 +258,93 @@
 }
 .line-1x-top {
   width: 40vw;
-  top: 100px;
+  top: 60px;
   left: calc((100% - 100vw) / 2);
 
   @include tablet {
     width: 60vw;
-    top: 164px;
+    top: 140px;
   }
   @include desktop {
     width: 32vw;
-    top: 131px;
+    top: 91px;
   }
 }
 .line-2x-top {
   width: 1px;
   height: 11px;
-  top: 90px;
+  top: 50px;
   left: calc(40vw + ((100% - 100vw) / 2));
 
   @include tablet {
-    top: 154px;
+    top: 130px;
     left: calc(60vw + ((100% - 100vw) / 2));
   }
   @include desktop {
     left: calc(32vw + ((100% - 100vw) / 2));
-    top: 120px;
+    top: 80px;
   }
 }
 .line-3x-top {
   width: 60vw;
   height: 1px;
-  top: 90px;
+  top: 50px;
   left: calc(40vw + ((100% - 100vw) / 2));
 
   @include tablet {
     width: 40vw;
-    top: 154px;
+    top: 130px;
     left: calc(60vw + ((100% - 100vw) / 2));
   }
   @include desktop {
     width: 68vw;
     left: calc(32vw + ((100% - 100vw) / 2));
-    top: 120px;
+    top: 80px;
   }
 }
 .line-1x-bottom {
   width: calc(40vw + 8px);
-  top: 108px;
+  top: 68px;
   left: calc((100% - 100vw) / 2);
 
   @include tablet {
-    top: 174px;
+    top: 150px;
     width: calc(60vw + 8px);
   }
   @include desktop {
     width: calc(32vw + 8px);
-    top: 140px;
+    top: 100px;
   }
 }
 .line-2x-bottom {
   width: 1px;
   height: 11px;
-  top: 98px;
+  top: 58px;
   left: calc(40vw + ((100% - 100vw) / 2) + 8px);
 
   @include tablet {
-    top: 164px;
+    top: 140px;
     left: calc(60vw + ((100% - 100vw) / 2) + 8px);
   }
   @include desktop {
     left: calc(32vw + ((100% - 100vw) / 2) + 8px);
-    top: 129px;
+    top: 89px;
   }
 }
 .line-3x-bottom {
   width: calc(60vw - 8px);
   height: 1px;
-  top: 98px;
+  top: 58px;
   left: calc(40vw + ((100% - 100vw) / 2) + 8px);
 
   @include tablet {
     width: calc(40vw - 8px);
-    top: 164px;
+    top: 140px;
     left: calc(60vw + ((100% - 100vw) / 2) + 8px);
   }
   @include desktop {
     width: calc(68vw - 8px);
     left: calc(32vw + ((100% - 100vw) / 2) + 8px);
-    top: 130px;
+    top: 90px;
   }
 }
