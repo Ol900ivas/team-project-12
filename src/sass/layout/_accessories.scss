@@ -235,13 +235,14 @@
   }
 }
 
-.list-cards__block {
-  gap: 16px;
+.list-cards__item {
+  margin-bottom: 36px;
 
   @include tablet {
     display: flex;
     flex-wrap: wrap;
     gap: 38px;
+    margin-bottom: 0;
   }
 
   @include desktop {
@@ -250,20 +251,6 @@
     gap: 20px;
   }
 }
-
-// .list-cards__item {
-//     display: block;
-
-//     @include tablet {
-//         width: 285px;
-//         flex-basis: calc((100% - 38px) / 2);
-//     }
-
-//         @include desktop {
-//         width: 285px;
-//         flex-basis: calc((100% - 20px) / 5);
-//     }
-// }
 
 .list-cards__link {
   display: block;
@@ -275,6 +262,7 @@
   overflow: hidden;
   border: 1px solid #86e543;
   border-radius: 12px;
+  margin-bottom: 8px;
 
   &:hover,
   &:focus {

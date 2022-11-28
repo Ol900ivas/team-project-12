@@ -63,7 +63,7 @@
 .article-page-title {
 
   padding-left: 16px;
-  padding-bottom: 31px;
+  margin-bottom: 31px;
   font-family: var(--medium-font);
   font-weight: 500;
   font-size: 24px;
@@ -71,10 +71,14 @@
   @include tablet {
     padding-left: 40px;
     padding-right: 40px;
+    margin-bottom: 72px;
     font-size: 56px;
     line-height: 1;
-    margin-bottom: 72px;
   }
+     @include desktop {
+      padding-left: 0;
+       margin-bottom: 59px;
+      }
 }
 
 .article-block {

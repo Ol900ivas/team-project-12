@@ -51,7 +51,7 @@ transition: cursor var(--duration) var(--timing-function),
 
   color: #000000;
 
-  transition: box-shadow 250ms var(--duration) var(--timing-function);
+  transition: box-shadow var(--duration) var(--timing-function);
 
   @include desktop {
     width: 102px;
