@@ -93,9 +93,9 @@
   }
 }
 
-// .header-container .menu-list__item {
-//   position: relative;
-// }
+.header-container .menu-list__item {
+  position: relative;
+}
 
 .header-container .menu-list__link::after {
   position: absolute;
@@ -160,15 +160,12 @@
 //   background-position: center;
 //   background-size: cover;
 //   overflow: auto;
-//   opacity: 0;
-//   transition: opacity var(--duration) var(--timing-function);
 
 //   box-shadow: inset 0px 4px 10px rgba(97, 162, 58, 0.2),
 //     0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
 
 //   &.is-open {
 //     display: block;
-//     opacity: 1;
 //   }
 //   @include retina {
 //     background-image: url(/src/images/bg/menu-bg-mob-2x.jpg);
@@ -187,7 +184,7 @@
 .mob-menu {
   position: absolute;
   z-index: 2;
-  top: 104px;
+  top: 100%;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -197,8 +194,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  // overflow: hidden;
+  // visibility: hidden;
+  // opacity: 0;
+
   pointer-events: none;
-  transform: translateY(100%);
+  transform: translateY(-125%);
   transition: transform 1000ms var(--timing-function);
   box-shadow: inset 0px 4px 10px rgba(97, 162, 58, 0.2),
     0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
@@ -206,7 +207,8 @@
     top: 136px;
   }
   &.is-open {
-    visibility: visible;
+    // opacity: 1;
+    // visibility: visible;
     pointer-events: initial;
     transform: translateY(0);
   }
